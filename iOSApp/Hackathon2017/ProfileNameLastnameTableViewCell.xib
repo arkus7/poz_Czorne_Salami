@@ -20,6 +20,7 @@
                 <subviews>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Imię" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k3g-Kp-l0P">
                         <rect key="frame" x="0.0" y="8" width="320" height="40"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="40" id="Pfv-cj-sX0"/>
                         </constraints>
@@ -29,6 +30,7 @@
                     </textField>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nazwisko" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TKh-p5-NcL">
                         <rect key="frame" x="0.0" y="56" width="320" height="40"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="40" id="Dhf-LJ-n14"/>
                         </constraints>
@@ -37,9 +39,9 @@
                         <textInputTraits key="textInputTraits"/>
                     </textField>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstItem="k3g-Kp-l0P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BpW-eQ-lFl"/>
-                    <constraint firstAttribute="bottom" secondItem="TKh-p5-NcL" secondAttribute="bottom" constant="8" id="L7o-4d-EAy"/>
                     <constraint firstItem="TKh-p5-NcL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="LDV-D6-cE9"/>
                     <constraint firstAttribute="trailing" secondItem="TKh-p5-NcL" secondAttribute="trailing" id="O4f-GU-s4j"/>
                     <constraint firstItem="TKh-p5-NcL" firstAttribute="top" secondItem="k3g-Kp-l0P" secondAttribute="bottom" constant="8" id="Qaf-r4-RvU"/>
@@ -47,6 +49,7 @@
                     <constraint firstAttribute="trailing" secondItem="k3g-Kp-l0P" secondAttribute="trailing" id="mvf-af-1xC"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <point key="canvasLocation" x="34" y="75.5"/>
         </tableViewCell>
     </objects>
