@@ -20,9 +20,6 @@ class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination = segue.destination as? ProfileViewController {
-            destination.imageViewDim = self.view.layer.frame.size.width * 0.6
-        }
     }
 
     @IBAction func loginButtonTapped(_ sender: Any) {

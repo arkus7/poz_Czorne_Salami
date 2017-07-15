@@ -25,6 +25,9 @@
                             <constraint firstAttribute="height" constant="40" id="n1B-Ii-RXN"/>
                         </constraints>
                         <state key="normal" title="Kalendarz"/>
+                        <connections>
+                            <action selector="calendarButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9S0-Ch-jCK"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCw-i3-WqJ">
                         <rect key="frame" x="0.0" y="104" width="320" height="40"/>
@@ -33,6 +36,9 @@
                             <constraint firstAttribute="height" constant="40" id="2Es-MB-KQs"/>
                         </constraints>
                         <state key="normal" title="Zapisz"/>
+                        <connections>
+                            <action selector="saveButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Lk7-ZA-1Xa"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CH-Lt-Wz6">
                         <rect key="frame" x="0.0" y="56" width="320" height="40"/>
@@ -41,6 +47,9 @@
                             <constraint firstAttribute="height" constant="40" id="KxI-1j-vhi"/>
                         </constraints>
                         <state key="normal" title="Lokalizacje"/>
+                        <connections>
+                            <action selector="localizationsButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="QWY-kE-ohR"/>
+                        </connections>
                     </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
