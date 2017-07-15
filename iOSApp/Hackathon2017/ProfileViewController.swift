@@ -25,6 +25,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         self.tableView.dataSource = self
         self.tableView.register(UINib(nibName: "ProfileAvatarTableViewCell", bundle: nil), forCellReuseIdentifier: ProfileAvatarTableViewCell.reuseIdentifier())
         self.tableView.register(UINib(nibName: "ProfileNameLastnameTableViewCell", bundle: nil), forCellReuseIdentifier: ProfileNameLastnameTableViewCell.reuseIdentifier())
+        self.tableView.register(UINib(nibName: "ProfileCalendarPlacesButtonsTableViewCell", bundle: nil), forCellReuseIdentifier: ProfileCalendarPlacesButtonsTableViewCell.reuseIdentifier())
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -33,12 +34,12 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         } else if indexPath.row == 1 {
             return 105
         } else {
-            return 40
+            return 152
         }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -48,7 +49,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         } else if indexPath.row == 1 {
             return self.setupNameLastnameCell(tableView: tableView, indexPath: indexPath)
         } else {
-            return UITableViewCell()
+            return self.setupProfileCalendarPlacesButtonsCell(tableView: tableView, indexPath: indexPath)
         }
     }
     
@@ -63,6 +64,9 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         return cell
     }
     
-    
+    func setupProfileCalendarPlacesButtonsCell(tableView: UITableView, indexPath: IndexPath) -> ProfileCalendarPlacesButtonsTableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: ProfileCalendarPlacesButtonsTableViewCell.reuseIdentifier(), for: indexPath) as! ProfileCalendarPlacesButtonsTableViewCell
+        return cell
+    }
 
 }
