@@ -29,7 +29,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="IJe-HV-s2D" firstAttribute="top" secondItem="iRa-HD-DYc" secondAttribute="bottom" id="8Xa-Jb-596"/>
+                            <constraint firstItem="IJe-HV-s2D" firstAttribute="top" secondItem="pmb-Zd-vPk" secondAttribute="topMargin" constant="20" id="Y4k-WA-n79"/>
                             <constraint firstItem="IJe-HV-s2D" firstAttribute="leading" secondItem="pmb-Zd-vPk" secondAttribute="leadingMargin" id="aZr-en-KjU"/>
                             <constraint firstItem="Ggj-zL-4EH" firstAttribute="top" secondItem="IJe-HV-s2D" secondAttribute="bottom" id="fOK-UP-gX6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IJe-HV-s2D" secondAttribute="trailing" id="wZ4-Di-xqp"/>
