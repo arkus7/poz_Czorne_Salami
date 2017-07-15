@@ -23,6 +23,7 @@
 		253236F61F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 253236F41F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.xib */; };
 		253236F91F1ACEBD00C98DA2 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253236F81F1ACEBD00C98DA2 /* Calendar.storyboard */; };
 		253236FB1F1ACED800C98DA2 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253236FA1F1ACED800C98DA2 /* CalendarViewController.swift */; };
+		257A01541F1ADE32003A9FF1 /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A01531F1ADE32003A9FF1 /* UIColorHex.swift */; };
 		339DB2F9FB136F60F81BFBA2 /* Pods_Hackathon2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD18AA911F76C2C9FE3C635 /* Pods_Hackathon2017.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		253236F41F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileCalendarPlacesButtonsTableViewCell.xib; sourceTree = "<group>"; };
 		253236F81F1ACEBD00C98DA2 /* Calendar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		253236FA1F1ACED800C98DA2 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		257A01531F1ADE32003A9FF1 /* UIColorHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
 		9DD18AA911F76C2C9FE3C635 /* Pods_Hackathon2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackathon2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47F9F3A5B8E363A7EE2BCB7 /* Pods-Hackathon2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon2017/Pods-Hackathon2017.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +97,7 @@
 		253236DB1F1A9A7B00C98DA2 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				257A01531F1ADE32003A9FF1 /* UIColorHex.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				253236F11F1AB08D00C98DA2 /* ProfileNameLastnameTableViewCell.swift in Sources */,
 				253236E61F1AA42500C98DA2 /* ProfileViewController.swift in Sources */,
 				250AF1781F1A8430006039FD /* AppDelegate.swift in Sources */,
+				257A01541F1ADE32003A9FF1 /* UIColorHex.swift in Sources */,
 				253236ED1F1AA89A00C98DA2 /* ProfileAvatarTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
