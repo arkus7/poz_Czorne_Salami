@@ -1,0 +1,53 @@
+## Plugin-specific files:
+
+#ignore pdf publication
+/publication/**/*.pdf
+
+# IntelliJ
+/out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
+
+#docker
+target-docker/
+
+
+#cert
+cert-target/
+
+#Python
+*.pyc
+
+
+#NPM
+npm-debug*
+bower_components/
+node_modules/
