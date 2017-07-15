@@ -10,6 +10,18 @@ import Foundation
 
 class Place {
     var name: String?
-    var latitude: Double?
-    var longitude: Double?
+    var coordinates: [Double]?
+    var category: String?
+    var address: String?
+    var city: String?
+    var imageUrl: String?
+    var placeDescription: String?
+    
+    var latitude: Double? {
+        return coordinates?.first
+    }
+    
+    var longitude: Double? {
+        return coordinates?.last
+    }
 }
