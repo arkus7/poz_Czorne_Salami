@@ -21,6 +21,8 @@
 		253236F21F1AB08D00C98DA2 /* ProfileNameLastnameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 253236F01F1AB08D00C98DA2 /* ProfileNameLastnameTableViewCell.xib */; };
 		253236F51F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253236F31F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.swift */; };
 		253236F61F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 253236F41F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.xib */; };
+		253236F91F1ACEBD00C98DA2 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253236F81F1ACEBD00C98DA2 /* Calendar.storyboard */; };
+		253236FB1F1ACED800C98DA2 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253236FA1F1ACED800C98DA2 /* CalendarViewController.swift */; };
 		339DB2F9FB136F60F81BFBA2 /* Pods_Hackathon2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD18AA911F76C2C9FE3C635 /* Pods_Hackathon2017.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		253236F01F1AB08D00C98DA2 /* ProfileNameLastnameTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileNameLastnameTableViewCell.xib; sourceTree = "<group>"; };
 		253236F31F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCalendarPlacesButtonsTableViewCell.swift; sourceTree = "<group>"; };
 		253236F41F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileCalendarPlacesButtonsTableViewCell.xib; sourceTree = "<group>"; };
+		253236F81F1ACEBD00C98DA2 /* Calendar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		253236FA1F1ACED800C98DA2 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		9DD18AA911F76C2C9FE3C635 /* Pods_Hackathon2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackathon2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47F9F3A5B8E363A7EE2BCB7 /* Pods-Hackathon2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon2017/Pods-Hackathon2017.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +128,7 @@
 		253236DF1F1A9AD400C98DA2 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				253236F71F1ACDD300C98DA2 /* Calendar */,
 				253236E31F1AA40F00C98DA2 /* Profile */,
 				253236E01F1A9B2E00C98DA2 /* Login */,
 			);
@@ -160,6 +165,15 @@
 				253236F41F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.xib */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		253236F71F1ACDD300C98DA2 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				253236F81F1ACEBD00C98DA2 /* Calendar.storyboard */,
+				253236FA1F1ACED800C98DA2 /* CalendarViewController.swift */,
+			);
+			name = Calendar;
 			sourceTree = "<group>";
 		};
 		621679687423A697073D788E /* Pods */ = {
@@ -246,6 +260,7 @@
 				253236F61F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.xib in Resources */,
 				250AF17F1F1A8430006039FD /* Assets.xcassets in Resources */,
 				253236F21F1AB08D00C98DA2 /* ProfileNameLastnameTableViewCell.xib in Resources */,
+				253236F91F1ACEBD00C98DA2 /* Calendar.storyboard in Resources */,
 				253236EE1F1AA89A00C98DA2 /* ProfileAvatarTableViewCell.xib in Resources */,
 				253236E91F1AA43C00C98DA2 /* Profile.storyboard in Resources */,
 				250AF17D1F1A8430006039FD /* Login.storyboard in Resources */,
@@ -307,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				253236FB1F1ACED800C98DA2 /* CalendarViewController.swift in Sources */,
 				253236E21F1A9D3600C98DA2 /* RoundedImage.swift in Sources */,
 				250AF17A1F1A8430006039FD /* LoginViewController.swift in Sources */,
 				253236F51F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.swift in Sources */,
