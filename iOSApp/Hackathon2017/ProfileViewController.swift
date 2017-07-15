@@ -19,6 +19,10 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
 
         self.setupTableView()
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 
     func setupTableView() {
         self.tableView.delegate = self
@@ -26,6 +30,10 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         self.tableView.register(UINib(nibName: "ProfileAvatarTableViewCell", bundle: nil), forCellReuseIdentifier: ProfileAvatarTableViewCell.reuseIdentifier())
         self.tableView.register(UINib(nibName: "ProfileNameLastnameTableViewCell", bundle: nil), forCellReuseIdentifier: ProfileNameLastnameTableViewCell.reuseIdentifier())
         self.tableView.register(UINib(nibName: "ProfileCalendarPlacesButtonsTableViewCell", bundle: nil), forCellReuseIdentifier: ProfileCalendarPlacesButtonsTableViewCell.reuseIdentifier())
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.view.endEditing(true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
