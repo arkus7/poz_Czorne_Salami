@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		217540371F1ACC1E004AB713 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217540351F1ACC1E004AB713 /* Map.storyboard */; };
+		2175403A1F1ACC40004AB713 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217540391F1ACC40004AB713 /* MapViewController.swift */; };
 		2175403C1F1ACE0F004AB713 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2175403B1F1ACE0F004AB713 /* Route.swift */; };
 		2175403E1F1ACEB2004AB713 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2175403D1F1ACEB2004AB713 /* Place.swift */; };
 		250AF1781F1A8430006039FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250AF1771F1A8430006039FD /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		08E9CE60A9E328BD1AEA3000 /* Pods-Hackathon2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon2017/Pods-Hackathon2017.debug.xcconfig"; sourceTree = "<group>"; };
 		217540361F1ACC1E004AB713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Map.storyboard; sourceTree = "<group>"; };
+		217540391F1ACC40004AB713 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2175403B1F1ACE0F004AB713 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		2175403D1F1ACEB2004AB713 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		250AF1741F1A8430006039FD /* Hackathon2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackathon2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				217540351F1ACC1E004AB713 /* Map.storyboard */,
+				217540391F1ACC40004AB713 /* MapViewController.swift */,
 				2175403B1F1ACE0F004AB713 /* Route.swift */,
 				2175403D1F1ACEB2004AB713 /* Place.swift */,
 			);
@@ -280,6 +283,7 @@
 			files = (
 				250AF17A1F1A8430006039FD /* LoginViewController.swift in Sources */,
 				2175403C1F1ACE0F004AB713 /* Route.swift in Sources */,
+				2175403A1F1ACC40004AB713 /* MapViewController.swift in Sources */,
 				250AF1781F1A8430006039FD /* AppDelegate.swift in Sources */,
 				2175403E1F1ACEB2004AB713 /* Place.swift in Sources */,
 			);
