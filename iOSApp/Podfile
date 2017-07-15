@@ -6,5 +6,6 @@ target 'Hackathon2017' do
   use_frameworks!
 
   # Pods for Hackathon2017
+  pod 'GoogleMaps'
 
 end
