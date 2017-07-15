@@ -13,6 +13,8 @@
 		250AF17F1F1A8430006039FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 250AF17E1F1A8430006039FD /* Assets.xcassets */; };
 		250AF1821F1A8430006039FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250AF1801F1A8430006039FD /* LaunchScreen.storyboard */; };
 		253236E21F1A9D3600C98DA2 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253236E11F1A9D3600C98DA2 /* RoundedImage.swift */; };
+		253236E61F1AA42500C98DA2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253236E41F1AA42500C98DA2 /* ProfileViewController.swift */; };
+		253236E91F1AA43C00C98DA2 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253236E81F1AA43C00C98DA2 /* Profile.storyboard */; };
 		339DB2F9FB136F60F81BFBA2 /* Pods_Hackathon2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD18AA911F76C2C9FE3C635 /* Pods_Hackathon2017.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,8 @@
 		250AF1811F1A8430006039FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		250AF1831F1A8430006039FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		253236E11F1A9D3600C98DA2 /* RoundedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		253236E41F1AA42500C98DA2 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		253236E81F1AA43C00C98DA2 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		9DD18AA911F76C2C9FE3C635 /* Pods_Hackathon2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackathon2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47F9F3A5B8E363A7EE2BCB7 /* Pods-Hackathon2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon2017/Pods-Hackathon2017.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +112,7 @@
 		253236DF1F1A9AD400C98DA2 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				253236E31F1AA40F00C98DA2 /* Profile */,
 				253236E01F1A9B2E00C98DA2 /* Login */,
 			);
 			name = Source;
@@ -120,6 +125,15 @@
 				250AF17B1F1A8430006039FD /* Login.storyboard */,
 			);
 			name = Login;
+			sourceTree = "<group>";
+		};
+		253236E31F1AA40F00C98DA2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				253236E41F1AA42500C98DA2 /* ProfileViewController.swift */,
+				253236E81F1AA43C00C98DA2 /* Profile.storyboard */,
+			);
+			name = Profile;
 			sourceTree = "<group>";
 		};
 		621679687423A697073D788E /* Pods */ = {
@@ -204,6 +218,7 @@
 			files = (
 				250AF1821F1A8430006039FD /* LaunchScreen.storyboard in Resources */,
 				250AF17F1F1A8430006039FD /* Assets.xcassets in Resources */,
+				253236E91F1AA43C00C98DA2 /* Profile.storyboard in Resources */,
 				250AF17D1F1A8430006039FD /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +280,7 @@
 			files = (
 				253236E21F1A9D3600C98DA2 /* RoundedImage.swift in Sources */,
 				250AF17A1F1A8430006039FD /* LoginViewController.swift in Sources */,
+				253236E61F1AA42500C98DA2 /* ProfileViewController.swift in Sources */,
 				250AF1781F1A8430006039FD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
