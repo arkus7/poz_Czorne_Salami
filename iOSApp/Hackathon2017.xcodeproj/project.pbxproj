@@ -12,6 +12,15 @@
 		250AF17D1F1A8430006039FD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250AF17B1F1A8430006039FD /* Login.storyboard */; };
 		250AF17F1F1A8430006039FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 250AF17E1F1A8430006039FD /* Assets.xcassets */; };
 		250AF1821F1A8430006039FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250AF1801F1A8430006039FD /* LaunchScreen.storyboard */; };
+		253236E21F1A9D3600C98DA2 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253236E11F1A9D3600C98DA2 /* RoundedImage.swift */; };
+		253236E61F1AA42500C98DA2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253236E41F1AA42500C98DA2 /* ProfileViewController.swift */; };
+		253236E91F1AA43C00C98DA2 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253236E81F1AA43C00C98DA2 /* Profile.storyboard */; };
+		253236ED1F1AA89A00C98DA2 /* ProfileAvatarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253236EB1F1AA89A00C98DA2 /* ProfileAvatarTableViewCell.swift */; };
+		253236EE1F1AA89A00C98DA2 /* ProfileAvatarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 253236EC1F1AA89A00C98DA2 /* ProfileAvatarTableViewCell.xib */; };
+		253236F11F1AB08D00C98DA2 /* ProfileNameLastnameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253236EF1F1AB08D00C98DA2 /* ProfileNameLastnameTableViewCell.swift */; };
+		253236F21F1AB08D00C98DA2 /* ProfileNameLastnameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 253236F01F1AB08D00C98DA2 /* ProfileNameLastnameTableViewCell.xib */; };
+		253236F51F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253236F31F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.swift */; };
+		253236F61F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 253236F41F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.xib */; };
 		339DB2F9FB136F60F81BFBA2 /* Pods_Hackathon2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD18AA911F76C2C9FE3C635 /* Pods_Hackathon2017.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +33,15 @@
 		250AF17E1F1A8430006039FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		250AF1811F1A8430006039FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		250AF1831F1A8430006039FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		253236E11F1A9D3600C98DA2 /* RoundedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		253236E41F1AA42500C98DA2 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		253236E81F1AA43C00C98DA2 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		253236EB1F1AA89A00C98DA2 /* ProfileAvatarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileAvatarTableViewCell.swift; sourceTree = "<group>"; };
+		253236EC1F1AA89A00C98DA2 /* ProfileAvatarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileAvatarTableViewCell.xib; sourceTree = "<group>"; };
+		253236EF1F1AB08D00C98DA2 /* ProfileNameLastnameTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileNameLastnameTableViewCell.swift; sourceTree = "<group>"; };
+		253236F01F1AB08D00C98DA2 /* ProfileNameLastnameTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileNameLastnameTableViewCell.xib; sourceTree = "<group>"; };
+		253236F31F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCalendarPlacesButtonsTableViewCell.swift; sourceTree = "<group>"; };
+		253236F41F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileCalendarPlacesButtonsTableViewCell.xib; sourceTree = "<group>"; };
 		9DD18AA911F76C2C9FE3C635 /* Pods_Hackathon2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackathon2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47F9F3A5B8E363A7EE2BCB7 /* Pods-Hackathon2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon2017/Pods-Hackathon2017.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +116,7 @@
 		253236DE1F1A9AC600C98DA2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				253236E11F1A9D3600C98DA2 /* RoundedImage.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -105,6 +124,7 @@
 		253236DF1F1A9AD400C98DA2 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				253236E31F1AA40F00C98DA2 /* Profile */,
 				253236E01F1A9B2E00C98DA2 /* Login */,
 			);
 			name = Source;
@@ -117,6 +137,29 @@
 				250AF17B1F1A8430006039FD /* Login.storyboard */,
 			);
 			name = Login;
+			sourceTree = "<group>";
+		};
+		253236E31F1AA40F00C98DA2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				253236EA1F1AA86200C98DA2 /* Views */,
+				253236E41F1AA42500C98DA2 /* ProfileViewController.swift */,
+				253236E81F1AA43C00C98DA2 /* Profile.storyboard */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		253236EA1F1AA86200C98DA2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				253236EB1F1AA89A00C98DA2 /* ProfileAvatarTableViewCell.swift */,
+				253236EC1F1AA89A00C98DA2 /* ProfileAvatarTableViewCell.xib */,
+				253236EF1F1AB08D00C98DA2 /* ProfileNameLastnameTableViewCell.swift */,
+				253236F01F1AB08D00C98DA2 /* ProfileNameLastnameTableViewCell.xib */,
+				253236F31F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.swift */,
+				253236F41F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		621679687423A697073D788E /* Pods */ = {
@@ -200,7 +243,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				250AF1821F1A8430006039FD /* LaunchScreen.storyboard in Resources */,
+				253236F61F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.xib in Resources */,
 				250AF17F1F1A8430006039FD /* Assets.xcassets in Resources */,
+				253236F21F1AB08D00C98DA2 /* ProfileNameLastnameTableViewCell.xib in Resources */,
+				253236EE1F1AA89A00C98DA2 /* ProfileAvatarTableViewCell.xib in Resources */,
+				253236E91F1AA43C00C98DA2 /* Profile.storyboard in Resources */,
 				250AF17D1F1A8430006039FD /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,8 +307,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				253236E21F1A9D3600C98DA2 /* RoundedImage.swift in Sources */,
 				250AF17A1F1A8430006039FD /* LoginViewController.swift in Sources */,
+				253236F51F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.swift in Sources */,
+				253236F11F1AB08D00C98DA2 /* ProfileNameLastnameTableViewCell.swift in Sources */,
+				253236E61F1AA42500C98DA2 /* ProfileViewController.swift in Sources */,
 				250AF1781F1A8430006039FD /* AppDelegate.swift in Sources */,
+				253236ED1F1AA89A00C98DA2 /* ProfileAvatarTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
