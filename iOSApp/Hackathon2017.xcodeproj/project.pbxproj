@@ -379,6 +379,7 @@
 				250AF1881F1A8430006039FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
