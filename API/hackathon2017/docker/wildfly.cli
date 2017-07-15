@@ -1,0 +1,6 @@
+embed-server --std-out=echo
+
+batch
+
+
+run-batch

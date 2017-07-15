@@ -1,0 +1,20 @@
+FROM jboss/wildfly:10.1.0.Final
+MAINTAINER Jakub Goszczurny <szczurmys@o2.pl>
+
+USER root
+
+RUN /opt/jboss/wildfly/bin/add-user.sh admin admin --silent
+
+
+#ADD /docker/wildfly.cli /opt/jboss/wildfly/wildfly.cli
+#RUN /opt/jboss/wildfly/bin/jboss-cli.sh --file=/opt/jboss/wildfly/wildfly.cli && rm /opt/jboss/wildfly/wildfly.cli
+
+ADD /service/target/service-*.war /opt/jboss/wildfly/standalone/deployments/
+
+
+RUN rm -rf /opt/jboss/wildfly/standalone/configuration/standalone_xml_history
+RUN chown -R jboss:jboss /opt/jboss/wildfly/
+
+USER jboss
+
+CMD ["/opt/jboss/wildfly/bin/standalone.sh", "--debug", "-b", "0.0.0.0", "-bmanagement", "0.0.0.0"]
