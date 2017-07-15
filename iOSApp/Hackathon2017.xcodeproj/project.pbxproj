@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		250AF1781F1A8430006039FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250AF1771F1A8430006039FD /* AppDelegate.swift */; };
-		250AF17A1F1A8430006039FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250AF1791F1A8430006039FD /* ViewController.swift */; };
-		250AF17D1F1A8430006039FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250AF17B1F1A8430006039FD /* Main.storyboard */; };
+		250AF17A1F1A8430006039FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250AF1791F1A8430006039FD /* LoginViewController.swift */; };
+		250AF17D1F1A8430006039FD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250AF17B1F1A8430006039FD /* Login.storyboard */; };
 		250AF17F1F1A8430006039FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 250AF17E1F1A8430006039FD /* Assets.xcassets */; };
 		250AF1821F1A8430006039FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250AF1801F1A8430006039FD /* LaunchScreen.storyboard */; };
 		339DB2F9FB136F60F81BFBA2 /* Pods_Hackathon2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD18AA911F76C2C9FE3C635 /* Pods_Hackathon2017.framework */; };
@@ -19,8 +19,8 @@
 		08E9CE60A9E328BD1AEA3000 /* Pods-Hackathon2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon2017/Pods-Hackathon2017.debug.xcconfig"; sourceTree = "<group>"; };
 		250AF1741F1A8430006039FD /* Hackathon2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackathon2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		250AF1771F1A8430006039FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		250AF1791F1A8430006039FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		250AF17C1F1A8430006039FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		250AF1791F1A8430006039FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		250AF17C1F1A8430006039FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		250AF17E1F1A8430006039FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		250AF1811F1A8430006039FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		250AF1831F1A8430006039FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,14 +61,62 @@
 		250AF1761F1A8430006039FD /* Hackathon2017 */ = {
 			isa = PBXGroup;
 			children = (
+				253236DF1F1A9AD400C98DA2 /* Source */,
+				253236DE1F1A9AC600C98DA2 /* Views */,
+				253236DD1F1A9ABC00C98DA2 /* Supporting Files */,
+				253236DC1F1A9A8300C98DA2 /* Backend */,
+				253236DB1F1A9A7B00C98DA2 /* Helpers */,
+			);
+			path = Hackathon2017;
+			sourceTree = "<group>";
+		};
+		253236DB1F1A9A7B00C98DA2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		253236DC1F1A9A8300C98DA2 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Backend;
+			sourceTree = "<group>";
+		};
+		253236DD1F1A9ABC00C98DA2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				250AF1771F1A8430006039FD /* AppDelegate.swift */,
-				250AF1791F1A8430006039FD /* ViewController.swift */,
-				250AF17B1F1A8430006039FD /* Main.storyboard */,
 				250AF17E1F1A8430006039FD /* Assets.xcassets */,
 				250AF1801F1A8430006039FD /* LaunchScreen.storyboard */,
 				250AF1831F1A8430006039FD /* Info.plist */,
 			);
-			path = Hackathon2017;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		253236DE1F1A9AC600C98DA2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		253236DF1F1A9AD400C98DA2 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				253236E01F1A9B2E00C98DA2 /* Login */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		253236E01F1A9B2E00C98DA2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				250AF1791F1A8430006039FD /* LoginViewController.swift */,
+				250AF17B1F1A8430006039FD /* Login.storyboard */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 		621679687423A697073D788E /* Pods */ = {
@@ -153,7 +201,7 @@
 			files = (
 				250AF1821F1A8430006039FD /* LaunchScreen.storyboard in Resources */,
 				250AF17F1F1A8430006039FD /* Assets.xcassets in Resources */,
-				250AF17D1F1A8430006039FD /* Main.storyboard in Resources */,
+				250AF17D1F1A8430006039FD /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				250AF17A1F1A8430006039FD /* ViewController.swift in Sources */,
+				250AF17A1F1A8430006039FD /* LoginViewController.swift in Sources */,
 				250AF1781F1A8430006039FD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,12 +268,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		250AF17B1F1A8430006039FD /* Main.storyboard */ = {
+		250AF17B1F1A8430006039FD /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				250AF17C1F1A8430006039FD /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		250AF1801F1A8430006039FD /* LaunchScreen.storyboard */ = {
