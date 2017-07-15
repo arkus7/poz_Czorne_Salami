@@ -1,6 +1,9 @@
 package pl.czornesalami.rest.filter;
 
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jws;
 import pl.czornesalami.jwt.JwtAdapter;
+import pl.czornesalami.repository.LoginDao;
 
 import javax.annotation.Priority;
 import javax.inject.Inject;
@@ -20,6 +23,9 @@ public class JWTTokenNeededFilter implements ContainerRequestFilter {
     @Inject
     private JwtAdapter jwtAdapter;
 
+    @Inject
+    private LoginDao loginDao;
+
     @Override
     public void filter(ContainerRequestContext requestContext) throws IOException {
 
@@ -29,8 +35,19 @@ public class JWTTokenNeededFilter implements ContainerRequestFilter {
         // Extract the token from the HTTP Authorization header
         String token = authorizationHeader.substring("Bearer".length()).trim();
 
-        if(jwtAdapter.validToken(token)) {
+        try {
+            Jws<Claims> claim = jwtAdapter.getClaim(token);
+            String username = claim.getBody().getSubject();
+
+            if(!loginDao.usernameExists(username)) {
+                throw new Exception("Username does not exist!");
+            }
+
+            requestContext.getHeaders().add("username", username);
+        } catch (Exception ex) {
             requestContext.abortWith(Response.status(Response.Status.UNAUTHORIZED).build());
         }
+
+
     }
 }

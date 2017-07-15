@@ -1,13 +1,11 @@
 package pl.czornesalami.jwt;
 
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.*;
 
 import javax.annotation.PostConstruct;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Inject;
 import java.security.NoSuchAlgorithmException;
 
 @ApplicationScoped
@@ -33,16 +31,8 @@ public class JwtAdapter {
                 .compact();
     }
 
-    public boolean validToken(String token) {
-        try {
-            // Validate the token
-            Jwts.parser().setSigningKey(secretKey).parseClaimsJws(token);
-            //logger.info("#### valid token : " + token);
-            return true;
-        } catch (Exception e) {
-            //logger.severe("#### invalid token : " + token);
-            return false;
-        }
+    public Jws<Claims> getClaim(String token) throws ExpiredJwtException, UnsupportedJwtException, MalformedJwtException, SignatureException, IllegalArgumentException {
+        return Jwts.parser().setSigningKey(secretKey).parseClaimsJws(token);
     }
 
 }

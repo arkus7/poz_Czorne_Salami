@@ -1,13 +1,13 @@
 package pl.czornesalami.repository;
 
+import pl.czornesalami.rest.model.ProfileDto;
+
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
-import java.util.Map;
 import java.util.Optional;
-import java.util.concurrent.ConcurrentHashMap;
 
 @ApplicationScoped
-public class LoginDao {
+public class ProfileDao {
 
     @Inject
     private Repo repo;
@@ -21,9 +21,12 @@ public class LoginDao {
         return true;
     }
 
-    public boolean usernameExists(String username) {
-        Optional<String> actualPassword = repo.getLoginPassword(username);
-        return actualPassword.isPresent();
+    public void addOrUpdateProfile(String username, ProfileDto profile) {
+        repo.addOrUpdateProfile(username, profile);
+    }
+
+    public Optional<ProfileDto> getProfile(String username) {
+        return repo.getProfile(username);
     }
 
 }
