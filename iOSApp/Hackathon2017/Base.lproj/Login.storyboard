@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hackathon2017" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Hackathon2017" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -51,6 +51,9 @@
                                                 <rect key="frame" x="78" y="112" width="187.5" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="Logowanie/Rejestracja"/>
+                                                <connections>
+                                                    <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o4W-Qa-muQ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -73,9 +76,20 @@
                             <constraint firstItem="d78-JS-hAm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="TeC-Lt-qdz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="Mvi-7c-HxV" kind="show" identifier="LoginSegue" id="8s7-AD-3p5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="cAH-ga-EkW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="Mvi-7c-HxV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZXn-Fe-btz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="858" y="38"/>
         </scene>
     </scenes>
     <resources>

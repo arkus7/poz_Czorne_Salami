@@ -12,14 +12,17 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? ProfileViewController {
+            destination.imageViewDim = self.view.layer.frame.size.width * 0.6
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: "LoginSegue", sender: nil)
     }
-
-
 }
 
