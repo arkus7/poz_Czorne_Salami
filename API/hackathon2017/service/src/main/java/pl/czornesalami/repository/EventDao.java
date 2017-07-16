@@ -15,8 +15,8 @@ public class EventDao {
     @Inject
     private Repo repo;
 
-    public void addEvent(String username, EventDto event) {
-        repo.addEvent(username, event);
+    public int addEvent(String username, EventDto event) {
+        return repo.addEvent(username, event);
     }
 
     public void joinToEvent(String username, int eventId) {
