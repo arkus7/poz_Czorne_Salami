@@ -82,19 +82,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Zapisz się"/>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="52M-K7-PI5">
-                                <rect key="frame" x="16" y="20" width="343" height="565"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="52M-K7-PI5">
+                                <rect key="frame" x="16" y="36" width="343" height="549"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="52M-K7-PI5" secondAttribute="trailing" id="1Bq-HU-dEs"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4Ck-Jf-vaD" secondAttribute="trailing" id="1gc-qQ-bxk"/>
                             <constraint firstItem="4Ck-Jf-vaD" firstAttribute="height" secondItem="yrT-RG-qIm" secondAttribute="height" multiplier="0.075" id="ES1-kF-YZk"/>
                             <constraint firstItem="JyV-0o-IzC" firstAttribute="top" secondItem="4Ck-Jf-vaD" secondAttribute="bottom" constant="16" id="Ttp-XQ-nEB"/>
                             <constraint firstItem="4Ck-Jf-vaD" firstAttribute="leading" secondItem="yrT-RG-qIm" secondAttribute="leadingMargin" id="dmU-4L-Rs0"/>
-                            <constraint firstItem="52M-K7-PI5" firstAttribute="top" secondItem="UE2-MH-S08" secondAttribute="bottom" id="htd-0f-N1e"/>
+                            <constraint firstItem="52M-K7-PI5" firstAttribute="top" secondItem="UE2-MH-S08" secondAttribute="bottom" constant="16" id="htd-0f-N1e"/>
                             <constraint firstItem="4Ck-Jf-vaD" firstAttribute="top" secondItem="52M-K7-PI5" secondAttribute="bottom" constant="16" id="wJ6-iw-SZm"/>
                             <constraint firstItem="52M-K7-PI5" firstAttribute="leading" secondItem="yrT-RG-qIm" secondAttribute="leadingMargin" id="zPY-zr-2IV"/>
                         </constraints>

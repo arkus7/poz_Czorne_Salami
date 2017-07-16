@@ -14,7 +14,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EventDetailsTopTableViewCell" rowHeight="105" id="ypR-cF-hrl" customClass="EventDetailsTopTableViewCell" customModule="Hackathon2017" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EventsDetailsTopTableViewCell" rowHeight="105" id="ypR-cF-hrl" customClass="EventsDetailsTopTableViewCell" customModule="Hackathon2017" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ypR-cF-hrl" id="4ei-kL-t9U">
@@ -69,11 +69,6 @@
                     <constraint firstItem="Lwf-jP-CcJ" firstAttribute="leading" secondItem="5nH-BY-pf6" secondAttribute="trailing" constant="16" id="qIL-mN-Hqv"/>
                 </constraints>
             </tableViewCellContentView>
-            <connections>
-                <outlet property="dateLabel" destination="gAv-mZ-r6H" id="93x-3w-Day"/>
-                <outlet property="descriptionLabel" destination="2nH-8o-8Ds" id="gDj-rH-53b"/>
-                <outlet property="titleLabel" destination="rEZ-Ay-0ux" id="Y3W-JN-8aa"/>
-            </connections>
             <point key="canvasLocation" x="34" y="84.5"/>
         </tableViewCell>
     </objects>
