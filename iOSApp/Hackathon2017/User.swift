@@ -38,6 +38,7 @@ class TimeTable: Mappable {
 }
 
 class User : Mappable {
+    var username: String?
     var name: String?
     var surname: String?
     var timetable: TimeTable?
@@ -56,5 +57,6 @@ class User : Mappable {
         surname <- map["surname"]
         timetable <- map["timetable"]
         placesIds <- map["places"]
+        username <- map["username"]
     }
 }

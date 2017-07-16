@@ -34,6 +34,9 @@
                                     <segment title="Zapisane"/>
                                 </segments>
                                 <color key="tintColor" red="0.49803921569999998" green="0.72156862749999995" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="onSegmentChangeAction:" destination="IYv-f2-k9n" eventType="valueChanged" id="3WE-fd-Giw"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NMj-xZ-trZ">
                                 <rect key="frame" x="16" y="72" width="343" height="531"/>
