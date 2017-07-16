@@ -17,8 +17,8 @@ class EventDetails: Mappable {
     var date: Date?
     var image: UIImage?
     var startPlace: Int?
-    var endPlace: Place?
-    var places: [Place]?
+    var endPlace: Int?
+    var places: [Int]?
     
     required init?(map: Map){
     }

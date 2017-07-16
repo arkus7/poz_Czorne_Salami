@@ -94,8 +94,8 @@ class ApiClient {
             "description": event.description!,
             "dateTime": event.date!.toString(),
             "startPlace": event.startPlace!,
-            "endPlace": event.endPlace!.id!,
-            "wayPoints": event.places!.map { $0.id! }
+            "endPlace": event.endPlace!,
+            "wayPoints": event.places!.map { $0 }
         ]
         
         Alamofire.request(url, method: .post, parameters: params, headers: headers(withToken: token)).responseJSON { response in

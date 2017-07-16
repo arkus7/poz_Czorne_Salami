@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol ProfileCalendarPlacesDelegate {
+protocol ProfileCalendarPlacesDelegate: NSObjectProtocol {
     func calendarTapped()
     func localizationsTapped()
     func saveTapped()
@@ -16,7 +16,7 @@ protocol ProfileCalendarPlacesDelegate {
 
 class ProfileCalendarPlacesButtonsTableViewCell: UITableViewCell {
     
-    var delegate: ProfileCalendarPlacesDelegate?
+    weak var delegate: ProfileCalendarPlacesDelegate?
     
     @IBAction func calendarButtonTapped(_ sender: Any) {
         self.delegate?.calendarTapped()

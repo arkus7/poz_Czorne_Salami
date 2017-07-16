@@ -121,6 +121,9 @@
                                 <state key="normal" title="Dalej">
                                     <color key="titleColor" red="0.99991279840000002" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="RLn-Z8-Cg9" eventType="touchUpInside" id="rrp-OP-OsA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -141,7 +144,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="datePicker" destination="tfT-o3-QFx" id="jJF-qW-8VX"/>
                         <outlet property="descriptionTextView" destination="OvL-Sl-HAj" id="hug-a3-B7b"/>
+                        <outlet property="nameLabel" destination="CnN-Qq-pr1" id="NoK-az-Cqf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kg9-Nu-bya" userLabel="First Responder" sceneMemberID="firstResponder"/>
