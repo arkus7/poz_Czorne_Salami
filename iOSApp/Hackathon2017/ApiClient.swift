@@ -33,9 +33,14 @@ class ApiClient {
         Alamofire.request(url, method: .post, parameters: params, encoding: JSONEncoding.default, headers: headers()).responseJSON { [unowned self] response in
             debugPrint(response)
             response.result.ifSuccess {
-                let token = response.response?.allHeaderFields["Authorization"]
-                self.defaults.set(token, forKey: self.tokenKey)
-                successCallback?()
+                if let token = response.response?.allHeaderFields["Authorization"] as? String {
+                    let trimmed = String(token.characters.dropFirst("Bearer ".characters.count))
+                    self.defaults.set(trimmed, forKey: self.tokenKey)
+                    self.token = trimmed
+                    successCallback?()
+                } else {
+                    errorCallback?()
+                }
             }
             response.result.ifFailure {
                 errorCallback?()
