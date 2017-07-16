@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 protocol LocalizationsCellProtocol: NSObjectProtocol {
     func didChangeSwitchStateTo(value: Bool, forPlace place: Place)
@@ -16,6 +17,7 @@ class LocalizationsTableViewCell: UITableViewCell, LocalizationsProtocol {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var selectSwitch: UISwitch!
+    @IBOutlet weak var avatarImage: CircularImage!
     
     var place: Place!
     weak var delegate: LocalizationsCellProtocol?
@@ -24,6 +26,7 @@ class LocalizationsTableViewCell: UITableViewCell, LocalizationsProtocol {
         titleLabel.text = place.name
         subtitleLabel.text = place.placeDescription
         self.place = place
+        self.avatarImage.sd_setImage(with: URL(string: place.imageUrl!), placeholderImage: UIImage(named: "users_count"))
     }
     
     func changeSwitchStateTo(value: Bool) {
