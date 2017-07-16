@@ -81,6 +81,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginTextField" destination="g4C-BX-ezQ" id="rFA-HE-afs"/>
+                        <outlet property="passwordTextField" destination="wKe-rR-ldR" id="LO3-YV-hWc"/>
                         <segue destination="Mvi-7c-HxV" kind="show" identifier="LoginSegue" id="8s7-AD-3p5"/>
                     </connections>
                 </viewController>

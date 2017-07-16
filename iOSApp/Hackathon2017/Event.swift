@@ -10,7 +10,8 @@ import Foundation
 import UIKit
 import ObjectMapper
 
-class Event: Mappable {
+class EventDetails: Mappable {
+    var id: Int?
     var title: String?
     var description: String?
     var date: Date?
@@ -23,6 +24,7 @@ class Event: Mappable {
     }
     
     func mapping(map: Map) {
+        self.id <- map["id"]
         self.title <- map["title"]
         self.description <- map["description"]
         self.date <- map["date"]
@@ -30,5 +32,35 @@ class Event: Mappable {
         self.startPlace <- map["startPlace"]
         self.endPlace <- map["endPlace"]
         self.places <- map["places"]
+    }
+}
+
+class Event : Mappable {
+    var author: String?
+    var joinedUsers: [String]?
+    var details: EventDetails?
+    var match: Double?
+    
+    required init?(map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        self.author <- map["author"]
+        self.joinedUsers <- map["joinedUsers"]
+        self.details <- map["event"]
+        self.match <- map["probability"]
+    }
+}
+
+class EventsResponse : Mappable {
+    var events: [Event]?
+    
+    func mapping(map: Map) {
+        events <- map["events"]
+    }
+    
+    required init?(map: Map) {
+        
     }
 }

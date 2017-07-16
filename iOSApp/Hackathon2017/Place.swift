@@ -10,6 +10,7 @@ import Foundation
 import ObjectMapper
 
 class Place : Mappable {
+    var id: Int?
     var name: String?
     var coordinates: [Double]?
     var category: String?
@@ -26,6 +27,7 @@ class Place : Mappable {
     }
     
     func mapping(map: Map) {
+        self.id <- map["id"]
         self.name <- map["name"]
         self.coordinates <- map["coordinates"]
         self.category <- map["category"]
@@ -41,5 +43,17 @@ class Place : Mappable {
     
     var longitude: Double? {
         return coordinates?.first
+    }
+}
+
+class PlacesResponse : Mappable {
+    var places: [Place]?
+    
+    required init?(map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        places <- map["places"]
     }
 }

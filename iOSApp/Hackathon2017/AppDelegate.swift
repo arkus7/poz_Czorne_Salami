@@ -20,18 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         GMSServices.provideAPIKey("AIzaSyCH-hcs78mpthV-mIFYmwjZGsp0ge1nBaA")
         
-        
         IQKeyboardManager.sharedManager().enable = true
-        
-        var storyboardName: String
-        if UserDefaults.standard.bool(forKey: "isUserLoggedIn") {
-            storyboardName = "Events"
-        } else {
-            storyboardName = "Login"
-        }
-        
-        let storyboard = UIStoryboard.init(name: storyboardName, bundle: nil)
-        self.window?.rootViewController = storyboard.instantiateInitialViewController()
         
         return true
     }
