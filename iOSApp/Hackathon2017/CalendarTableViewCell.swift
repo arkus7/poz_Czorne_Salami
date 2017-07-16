@@ -26,6 +26,10 @@ class CalendarTableViewCell: UITableViewCell {
     
     var selectedDays: Array<String> = []
     
+    var day: WeekDay!
+    
+    var dataLoaded: Bool = false
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -45,6 +49,7 @@ class CalendarTableViewCell: UITableViewCell {
             self.nineButton.backgroundColor = .clear
             self.nineButton.setTitleColor(UIColor("#7fb851"), for: .normal)
         }
+        updateTimetable()
     }
     
     @IBAction func twelveButtonTapped(_ sender: Any) {
@@ -59,6 +64,7 @@ class CalendarTableViewCell: UITableViewCell {
             self.twelveButton.backgroundColor = .clear
             self.twelveButton.setTitleColor(UIColor("#7fb851"), for: .normal)
         }
+        updateTimetable()
     }
     
     @IBAction func fifteenButtonTapped(_ sender: Any) {
@@ -73,6 +79,7 @@ class CalendarTableViewCell: UITableViewCell {
             self.fifteenButton.backgroundColor = .clear
             self.fifteenButton.setTitleColor(UIColor("#7fb851"), for: .normal)
         }
+        updateTimetable()
     }
     
     @IBAction func eighteenButtonTapped(_ sender: Any) {
@@ -87,6 +94,7 @@ class CalendarTableViewCell: UITableViewCell {
             self.eighteenButton.backgroundColor = .clear
             self.eighteenButton.setTitleColor(UIColor("#7fb851"), for: .normal)
         }
+        updateTimetable()
     }
     
     @IBAction func twentyOneButtonTapped(_ sender: Any) {
@@ -101,10 +109,85 @@ class CalendarTableViewCell: UITableViewCell {
             self.twentyOneButton.backgroundColor = .clear
             self.twentyOneButton.setTitleColor(UIColor("#7fb851"), for: .normal)
         }
+        updateTimetable()
     }
     
     class func reuseIdentifier() -> String {
         return "CalendarTableViewCell"
     }
     
+    func loadData() {
+        guard let day = self.day, let user = DataManager.shared.user else { return }
+        var hours: [Int]?
+        switch day {
+        case .monday:
+            hours = user.timetable?.monday
+        case .tuesday:
+            hours = user.timetable?.tuesday
+        case .wednesday:
+            hours = user.timetable?.wednesday
+        case .thursday:
+            hours = user.timetable?.thursday
+        case .friday:
+            hours = user.timetable?.friday
+        case .saturday:
+            hours = user.timetable?.saturday
+        case .sunday:
+            hours = user.timetable?.sunday
+        }
+        guard let selectedHours = hours, selectedHours.count > 0 else { return }
+        
+        if selectedHours.contains(9) {
+            nineButtonTapped(self)
+        }
+        if selectedHours.contains(12) {
+            twelveButtonTapped(self)
+        }
+        if selectedHours.contains(15) {
+            fifteenButtonTapped(self)
+        }
+        if selectedHours.contains(18) {
+            eighteenButtonTapped(self)
+        }
+        if selectedHours.contains(21) {
+            twentyOneButtonTapped(self)
+        }
+        dataLoaded = true
+    }
+    
+    func updateTimetable() {
+        if !dataLoaded { return }
+        if DataManager.shared.user == nil {
+            DataManager.shared.user = User()
+        }
+        guard let user = DataManager.shared.user else { return }
+        if user.timetable == nil {
+            user.timetable = TimeTable()
+        }
+        guard let timetable = user.timetable, let day = self.day else { return }
+        let selectedHours = self.selectedDays.map { Int($0)! }
+        switch day {
+        case .monday:
+            timetable.monday = selectedHours
+        case .tuesday:
+            timetable.tuesday = selectedHours
+        case .wednesday:
+            timetable.wednesday = selectedHours
+        case .thursday:
+            timetable.thursday = selectedHours
+        case .friday:
+            timetable.friday = selectedHours
+        case .saturday:
+            timetable.saturday = selectedHours
+        case .sunday:
+            timetable.sunday = selectedHours
+        }
+        
+        ApiClient.shared.updateUser(user, successCallback: nil, errorCallback: nil)
+    }
+    
+}
+
+enum WeekDay: Int {
+    case monday, tuesday, wednesday, thursday, friday, saturday, sunday
 }
