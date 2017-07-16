@@ -23,10 +23,6 @@ class EventDetails: Mappable {
     required init?(map: Map){
     }
     
-    convenience init() {
-        self.init()
-    }
-    
     func mapping(map: Map) {
         self.id <- map["id"]
         self.title <- map["title"]

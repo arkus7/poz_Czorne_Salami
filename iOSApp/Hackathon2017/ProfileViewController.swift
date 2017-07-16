@@ -19,6 +19,8 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.viewDidLoad()
         self.imageViewDim = self.view.layer.frame.size.width * 0.6
         self.setupTableView()
+        
+        self.navigationController?.navigationBar.tintColor = .white
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -94,8 +96,9 @@ extension ProfileViewController: ProfileCalendarPlacesDelegate {
     }
     
     func localizationsTapped() {
-        print("Localizations tapped")
-//        self.performSegue(withIdentifier: "LocalizationsSegue", sender: nil)
+        let storyboard = UIStoryboard.init(name: "Localizations", bundle: nil)
+        guard let viewController = storyboard.instantiateInitialViewController() else { return }
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     func saveTapped() {
