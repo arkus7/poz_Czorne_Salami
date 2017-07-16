@@ -7,4 +7,5 @@ target 'Hackathon2017' do
 
   # Pods for Hackathon2017
   pod 'IQKeyboardManagerSwift'
+  pod 'AlamofireObjectMapper', '~> 4.0'
 end
