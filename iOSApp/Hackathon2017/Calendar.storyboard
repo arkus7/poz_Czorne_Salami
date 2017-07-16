@@ -27,7 +27,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="gTc-vr-eGC" firstAttribute="leading" secondItem="cp9-0K-kBy" secondAttribute="leadingMargin" id="AqN-XR-tlj"/>
                             <constraint firstItem="MY8-30-N1w" firstAttribute="top" secondItem="gTc-vr-eGC" secondAttribute="bottom" id="DGS-fo-U4R"/>

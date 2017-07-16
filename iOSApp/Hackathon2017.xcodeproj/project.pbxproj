@@ -18,6 +18,10 @@
 		250874491F1B1D2F00EFE774 /* EventsDetailsDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 250874471F1B1D2F00EFE774 /* EventsDetailsDescriptionTableViewCell.xib */; };
 		2508744C1F1B22BE00EFE774 /* EventsDetailsMapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2508744A1F1B22BE00EFE774 /* EventsDetailsMapTableViewCell.swift */; };
 		2508744D1F1B22BE00EFE774 /* EventsDetailsMapTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2508744B1F1B22BE00EFE774 /* EventsDetailsMapTableViewCell.xib */; };
+		250874501F1B31C700EFE774 /* LocalizationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2508744F1F1B31C700EFE774 /* LocalizationsViewController.swift */; };
+		250874521F1B31D100EFE774 /* Localizations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250874511F1B31D100EFE774 /* Localizations.storyboard */; };
+		250874561F1B359700EFE774 /* LocalizationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250874541F1B359700EFE774 /* LocalizationsTableViewCell.swift */; };
+		250874571F1B359700EFE774 /* LocalizationsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 250874551F1B359700EFE774 /* LocalizationsTableViewCell.xib */; };
 		250AF1781F1A8430006039FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250AF1771F1A8430006039FD /* AppDelegate.swift */; };
 		250AF17A1F1A8430006039FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250AF1791F1A8430006039FD /* LoginViewController.swift */; };
 		250AF17D1F1A8430006039FD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250AF17B1F1A8430006039FD /* Login.storyboard */; };
@@ -60,6 +64,10 @@
 		250874471F1B1D2F00EFE774 /* EventsDetailsDescriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventsDetailsDescriptionTableViewCell.xib; sourceTree = "<group>"; };
 		2508744A1F1B22BE00EFE774 /* EventsDetailsMapTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsDetailsMapTableViewCell.swift; sourceTree = "<group>"; };
 		2508744B1F1B22BE00EFE774 /* EventsDetailsMapTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventsDetailsMapTableViewCell.xib; sourceTree = "<group>"; };
+		2508744F1F1B31C700EFE774 /* LocalizationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationsViewController.swift; sourceTree = "<group>"; };
+		250874511F1B31D100EFE774 /* Localizations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Localizations.storyboard; sourceTree = "<group>"; };
+		250874541F1B359700EFE774 /* LocalizationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationsTableViewCell.swift; sourceTree = "<group>"; };
+		250874551F1B359700EFE774 /* LocalizationsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalizationsTableViewCell.xib; sourceTree = "<group>"; };
 		250AF1741F1A8430006039FD /* Hackathon2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackathon2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		250AF1771F1A8430006039FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		250AF1791F1A8430006039FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -82,12 +90,12 @@
 		257A01501F1AD9A1003A9FF1 /* CalendarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarTableViewCell.xib; sourceTree = "<group>"; };
 		257A01531F1ADE32003A9FF1 /* UIColorHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
 		257A01551F1AE078003A9FF1 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
-		67496DFB1F1B01C500D72455 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		257A01581F1AF067003A9FF1 /* Events.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
 		257A015A1F1AF09C003A9FF1 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		257A015D1F1AF3D1003A9FF1 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
 		257A015E1F1AF3D1003A9FF1 /* EventsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventsTableViewCell.xib; sourceTree = "<group>"; };
 		257A01621F1AF400003A9FF1 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		67496DFB1F1B01C500D72455 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		9DD18AA911F76C2C9FE3C635 /* Pods_Hackathon2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackathon2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47F9F3A5B8E363A7EE2BCB7 /* Pods-Hackathon2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon2017/Pods-Hackathon2017.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +119,25 @@
 				217540391F1ACC40004AB713 /* MapViewController.swift */,
 			);
 			name = Map;
+			sourceTree = "<group>";
+		};
+		2508744E1F1B31B500EFE774 /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				250874531F1B357F00EFE774 /* Views */,
+				2508744F1F1B31C700EFE774 /* LocalizationsViewController.swift */,
+				250874511F1B31D100EFE774 /* Localizations.storyboard */,
+			);
+			name = Localizations;
+			sourceTree = "<group>";
+		};
+		250874531F1B357F00EFE774 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				250874541F1B359700EFE774 /* LocalizationsTableViewCell.swift */,
+				250874551F1B359700EFE774 /* LocalizationsTableViewCell.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		250AF16B1F1A8430006039FD = {
@@ -183,6 +210,7 @@
 		253236DF1F1A9AD400C98DA2 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				2508744E1F1B31B500EFE774 /* Localizations */,
 				257A01571F1AF050003A9FF1 /* Events */,
 				253236F71F1ACDD300C98DA2 /* Calendar */,
 				253236E31F1AA40F00C98DA2 /* Profile */,
@@ -369,7 +397,9 @@
 				253236F21F1AB08D00C98DA2 /* ProfileNameLastnameTableViewCell.xib in Resources */,
 				253236F91F1ACEBD00C98DA2 /* Calendar.storyboard in Resources */,
 				253236EE1F1AA89A00C98DA2 /* ProfileAvatarTableViewCell.xib in Resources */,
+				250874571F1B359700EFE774 /* LocalizationsTableViewCell.xib in Resources */,
 				253236E91F1AA43C00C98DA2 /* Profile.storyboard in Resources */,
+				250874521F1B31D100EFE774 /* Localizations.storyboard in Resources */,
 				250874491F1B1D2F00EFE774 /* EventsDetailsDescriptionTableViewCell.xib in Resources */,
 				250AF17D1F1A8430006039FD /* Login.storyboard in Resources */,
 				257A01591F1AF067003A9FF1 /* Events.storyboard in Resources */,
@@ -436,7 +466,9 @@
 				2508744C1F1B22BE00EFE774 /* EventsDetailsMapTableViewCell.swift in Sources */,
 				253236FB1F1ACED800C98DA2 /* CalendarViewController.swift in Sources */,
 				253236E21F1A9D3600C98DA2 /* CircularImage.swift in Sources */,
+				250874561F1B359700EFE774 /* LocalizationsTableViewCell.swift in Sources */,
 				257A015F1F1AF3D1003A9FF1 /* EventsTableViewCell.swift in Sources */,
+				250874501F1B31C700EFE774 /* LocalizationsViewController.swift in Sources */,
 				250AF17A1F1A8430006039FD /* LoginViewController.swift in Sources */,
 				253236F51F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.swift in Sources */,
 				253236F11F1AB08D00C98DA2 /* ProfileNameLastnameTableViewCell.swift in Sources */,

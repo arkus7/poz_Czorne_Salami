@@ -88,8 +88,9 @@ extension ProfileViewController: ProfileCalendarPlacesDelegate {
     }
     
     func localizationsTapped() {
-        print("Localizations tapped")
-//        self.performSegue(withIdentifier: "LocalizationsSegue", sender: nil)
+        let storyboard = UIStoryboard.init(name: "Localizations", bundle: nil)
+        guard let viewController = storyboard.instantiateInitialViewController() else { return }
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     func saveTapped() {
