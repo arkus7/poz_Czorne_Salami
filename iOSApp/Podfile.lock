@@ -1,4 +1,5 @@
 PODS:
+  - AFDateHelper (4.2.2)
   - Alamofire (4.5.0)
   - AlamofireObjectMapper (4.1.0):
     - Alamofire (~> 4.1)
@@ -12,17 +13,19 @@ PODS:
   - ObjectMapper (2.2.7)
 
 DEPENDENCIES:
+  - AFDateHelper (~> 4.2.1)
   - AlamofireObjectMapper (~> 4.0)
   - GoogleMaps
   - IQKeyboardManagerSwift
 
 SPEC CHECKSUMS:
+  AFDateHelper: 0f9588a442b4d7ef862568ae5d40ab883672efb5
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
   GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
   IQKeyboardManagerSwift: 75ba21a23794a1e6b6fe6d9a267ea17f80e06771
   ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
 
-PODFILE CHECKSUM: 2f4ddc9a6044982eae4923ba34032384fa5580aa
+PODFILE CHECKSUM: 88cdd7b5032e230456728d79ec0311aff1ad8f23
 
 COCOAPODS: 1.2.0

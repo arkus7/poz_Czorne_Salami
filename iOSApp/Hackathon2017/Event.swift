@@ -22,6 +22,10 @@ class Event: Mappable {
     required init?(map: Map){
     }
     
+    convenience init() {
+        self.init()
+    }
+    
     func mapping(map: Map) {
         self.title <- map["title"]
         self.description <- map["description"]

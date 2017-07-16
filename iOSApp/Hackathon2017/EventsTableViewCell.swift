@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AFDateHelper
 
 class EventsTableViewCell: UITableViewCell {
 
@@ -18,7 +19,7 @@ class EventsTableViewCell: UITableViewCell {
     func setupCell(event: Event) {
         self.titleLabel.text = event.title
         self.descriptionLabel.text = event.description
-        self.dateLabel.text = event.date.to
+        self.dateLabel.text = event.date?.toString()
     }
     
     override func awakeFromNib() {

@@ -10,5 +10,5 @@ target 'Hackathon2017' do
   pod 'IQKeyboardManagerSwift'
   pod 'AlamofireObjectMapper', '~> 4.0'
   pod 'GoogleMaps'
-
+  pod 'AFDateHelper', '~> 4.2.1'
 end
