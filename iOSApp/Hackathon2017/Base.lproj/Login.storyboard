@@ -48,17 +48,20 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6J-y0-MTH">
-                                                <rect key="frame" x="78" y="112" width="187.5" height="40"/>
-                                                <color key="backgroundColor" red="0.0078431372550000003" green="0.80392156859999997" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6J-y0-MTH" customClass="RoundedButton" customModule="Hackathon2017" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="112" width="343" height="40"/>
+                                                <color key="backgroundColor" red="0.49803921568627452" green="0.72156862745098038" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <state key="normal" title="Logowanie/Rejestracja"/>
+                                                <state key="normal" title="Logowanie/Rejestracja">
+                                                    <color key="titleColor" red="0.9999127984046936" green="1" blue="0.99988144636154175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o4W-Qa-muQ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="E6J-y0-MTH" firstAttribute="width" secondItem="wKe-rR-ldR" secondAttribute="width" id="BI2-AV-Ift"/>
                                             <constraint firstItem="wKe-rR-ldR" firstAttribute="width" secondItem="g4C-BX-ezQ" secondAttribute="width" id="Zu2-IB-Z1Y"/>
                                         </constraints>
                                     </stackView>
@@ -73,7 +76,6 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="d78-JS-hAm" secondAttribute="trailing" constant="16" id="93S-EG-tAz"/>
-                            <constraint firstItem="E6J-y0-MTH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="E0d-Nk-zK0"/>
                             <constraint firstItem="d78-JS-hAm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="H6c-8c-x0Y"/>
                             <constraint firstItem="d78-JS-hAm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="60" id="hOZ-vt-npc"/>
                         </constraints>
@@ -97,4 +99,5 @@
     <resources>
         <image name="LogoWithText" width="223" height="102"/>
     </resources>
+    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
