@@ -4,6 +4,7 @@ import java.util.Map;
 
 
 public class ProfileDto {
+    private String username;
     private String name;
     private String surname;
     private Map<String, int[]> timetable;
@@ -14,6 +15,10 @@ public class ProfileDto {
 
     public static Builder builder() {
         return new Builder();
+    }
+
+    public String getUsername() {
+        return username;
     }
 
     public String getName() {
@@ -38,12 +43,18 @@ public class ProfileDto {
     }
 
     public static final class Builder {
+        private String username;
         private String name;
         private String surname;
         private Map<String, int[]> timetable;
         private int[] places;
 
         private Builder() {
+        }
+
+        public Builder withUsername(String username) {
+            this.username = username;
+            return this;
         }
 
         public Builder withName(String name) {
@@ -67,10 +78,11 @@ public class ProfileDto {
         }
 
         public Builder but() {
-            return builder().withName(name).withSurname(surname).withTimetable(timetable).withPlaces(places);
+            return builder().withUsername(username).withName(name).withSurname(surname).withTimetable(timetable).withPlaces(places);
         }
 
         public Builder from(ProfileDto from) {
+            this.username = from.username;
             this.name = from.name;
             this.surname = from.surname;
             this.timetable = from.timetable;
@@ -81,9 +93,10 @@ public class ProfileDto {
         public ProfileDto build() {
             ProfileDto profileDto = new ProfileDto();
             profileDto.name = this.name;
+            profileDto.places = this.places;
             profileDto.surname = this.surname;
             profileDto.timetable = this.timetable;
-            profileDto.places = this.places;
+            profileDto.username = this.username;
             return profileDto;
         }
     }

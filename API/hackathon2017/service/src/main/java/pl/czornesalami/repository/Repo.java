@@ -59,15 +59,17 @@ public class Repo {
         usersJoinedToEvent.put(eventId, usernames);
     }
 
-    public void addEvent(String username, EventDto event) {
+    public int addEvent(String username, EventDto event) {
         List<EventDto> eventsForUser = new ArrayList<>();
         if (events.containsKey(username)) {
             eventsForUser.addAll(events.get(username));
         }
-        eventsForUser.add(event.toBuilder()
+        EventDto eventWithId = event.toBuilder()
                 .withId(++eventActualId)
-                .build());
+                .build();
+        eventsForUser.add(eventWithId);
         events.put(username, eventsForUser);
+        return eventWithId.getId();
     }
 
     public Optional<EventDto> getEvent(final int eventId) {
@@ -118,7 +120,7 @@ public class Repo {
                 .count();
 
 
-        return (double) countIntersect / (double) userPlacesStream.size();
+        return (double) countIntersect / (double) (event.getWayPoints().length + 2);
 
     }
 }
