@@ -8,10 +8,29 @@
 
 import UIKit
 
-class ProfileCalendarPlacesButtonsTableViewCell: UITableViewCell {
+protocol ProfileCalendarPlacesDelegate {
+    func calendarTapped()
+    func localizationsTapped()
+    func saveTapped()
+}
 
+class ProfileCalendarPlacesButtonsTableViewCell: UITableViewCell {
+    
+    var delegate: ProfileCalendarPlacesDelegate?
+    
+    @IBAction func calendarButtonTapped(_ sender: Any) {
+        self.delegate?.calendarTapped()
+    }
+    
+    @IBAction func localizationsButtonTapped(_ sender: Any) {
+        self.delegate?.localizationsTapped()
+    }
+    
+    @IBAction func saveButtonTapped(_ sender: Any) {
+        self.delegate?.saveTapped()
+    }
+    
     class func reuseIdentifier() -> String {
         return "ProfileCalendarPlacesButtonsTableViewCell"
     }
-    
 }

@@ -27,7 +27,7 @@ public class LoginRestService {
 
     @POST
     @Path("/login")
-    @Consumes({MediaType.APPLICATION_JSON})
+    @Consumes({MediaType.APPLICATION_JSON + ";charset=utf-8"})
     public Response login(LoginRequestDto data) {
         if(loginDao.login(data.getUsername(), data.getPassword())) {
             return Response
