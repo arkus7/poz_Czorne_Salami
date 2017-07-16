@@ -11,4 +11,5 @@ target 'Hackathon2017' do
   pod 'AlamofireObjectMapper', '~> 4.0'
   pod 'GoogleMaps'
   pod 'AFDateHelper', '~> 4.2.1'
+  pod 'RxSwift', '~> 3.5.0'
 end
