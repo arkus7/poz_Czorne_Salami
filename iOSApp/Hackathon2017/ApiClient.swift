@@ -43,6 +43,18 @@ class ApiClient {
         }
     }
     
+    func getProfile(successCallback: ((User) -> Void)?, errorCallback: (() -> Void)?) {
+        let url = "\(baseUrl)/profile"
+        
+        Alamofire.request(url, headers: headers(withToken: token)).responseObject { (response: DataResponse<User>) in
+            if let profile = response.result.value {
+                successCallback?(profile)
+            } else {
+                errorCallback?()
+            }
+        }
+    }
+    
     private func headers(withToken token: String? = nil) -> HTTPHeaders {
         var headers: HTTPHeaders = [
            "Content-type": "application/json"
