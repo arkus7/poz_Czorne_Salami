@@ -38,10 +38,12 @@ class CalendarTableViewCell: UITableViewCell {
             self.selectedDays.append("9")
             self.isNine = true
             self.nineButton.backgroundColor = UIColor("#7fb851")
+            self.nineButton.setTitleColor(UIColor("#ffffff"), for: .normal)
         } else {
             self.selectedDays = self.selectedDays.filter{$0 != "9"}
             self.isNine = false
             self.nineButton.backgroundColor = .clear
+            self.nineButton.setTitleColor(UIColor("#7fb851"), for: .normal)
         }
     }
     
@@ -50,10 +52,12 @@ class CalendarTableViewCell: UITableViewCell {
             self.selectedDays.append("12")
             self.isTwelve = true
             self.twelveButton.backgroundColor = UIColor("#7fb851")
+            self.twelveButton.setTitleColor(UIColor("#ffffff"), for: .normal)
         } else {
             self.selectedDays = self.selectedDays.filter{$0 != "12"}
             self.isTwelve = false
             self.twelveButton.backgroundColor = .clear
+            self.twelveButton.setTitleColor(UIColor("#7fb851"), for: .normal)
         }
     }
     
@@ -62,10 +66,12 @@ class CalendarTableViewCell: UITableViewCell {
             self.selectedDays.append("15")
             self.isFifteen = true
             self.fifteenButton.backgroundColor = UIColor("#7fb851")
+            self.fifteenButton.setTitleColor(UIColor("#ffffff"), for: .normal)
         } else {
             self.selectedDays = self.selectedDays.filter{$0 != "15"}
             self.isFifteen = false
             self.fifteenButton.backgroundColor = .clear
+            self.fifteenButton.setTitleColor(UIColor("#7fb851"), for: .normal)
         }
     }
     
@@ -74,10 +80,12 @@ class CalendarTableViewCell: UITableViewCell {
             self.selectedDays.append("18")
             self.isEighteen = true
             self.eighteenButton.backgroundColor = UIColor("#7fb851")
+            self.eighteenButton.setTitleColor(UIColor("#ffffff"), for: .normal)
         } else {
             self.selectedDays = self.selectedDays.filter{$0 != "18"}
             self.isEighteen = false
             self.eighteenButton.backgroundColor = .clear
+            self.eighteenButton.setTitleColor(UIColor("#7fb851"), for: .normal)
         }
     }
     
@@ -86,10 +94,12 @@ class CalendarTableViewCell: UITableViewCell {
             self.selectedDays.append("21")
             self.isTwentyOne = true
             self.twentyOneButton.backgroundColor = UIColor("#7fb851")
+            self.twentyOneButton.setTitleColor(UIColor("#ffffff"), for: .normal)
         } else {
             self.selectedDays = self.selectedDays.filter{$0 != "21"}
             self.isTwentyOne = false
             self.twentyOneButton.backgroundColor = .clear
+            self.twentyOneButton.setTitleColor(UIColor("#7fb851"), for: .normal)
         }
     }
     
