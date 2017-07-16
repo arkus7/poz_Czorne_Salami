@@ -282,7 +282,7 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
 	&quot;title&quot;: &quot;Moje ulubione zabytki&quot;,&#xd;
-	&quot;descripton&quot;: &quot;Zabytki które zawsze lubię zobaczyć.&quot;,&#xd;
+	&quot;description&quot;: &quot;Zabytki które zawsze lubię zobaczyć.&quot;,&#xd;
 	&quot;dateTime&quot;: &quot;2017-07-17T09:00:00.000&quot;,&#xd;
 	&quot;startPlace&quot;: 41218,&#xd;
 	&quot;endPlace&quot;: 41235,&#xd;
@@ -342,7 +342,7 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
 	&quot;title&quot;: &quot;Szybka trasa&quot;,&#xd;
-	&quot;descripton&quot;: &quot;brak&quot;,&#xd;
+	&quot;description&quot;: &quot;brak&quot;,&#xd;
 	&quot;dateTime&quot;: &quot;2017-07-22T15:00:00.000&quot;,&#xd;
 	&quot;startPlace&quot;: 41220,&#xd;
 	&quot;endPlace&quot;: 41222,&#xd;
@@ -583,7 +583,7 @@
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
                 <stringProp name="Argument.value">{&#xd;
 	&quot;title&quot;: &quot;Salami trasa&quot;,&#xd;
-	&quot;descripton&quot;: &quot;Salami trasa po salach.&quot;,&#xd;
+	&quot;description&quot;: &quot;Salami trasa po salach.&quot;,&#xd;
 	&quot;dateTime&quot;: &quot;2017-07-21T18:00:00.000&quot;,&#xd;
 	&quot;startPlace&quot;: 41220,&#xd;
 	&quot;endPlace&quot;: 41221,&#xd;

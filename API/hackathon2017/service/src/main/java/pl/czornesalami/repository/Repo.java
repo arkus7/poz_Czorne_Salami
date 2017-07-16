@@ -102,6 +102,9 @@ public class Repo {
     }
 
     private double countProbability(EventDto event, int[] userPlaces) {
+        if (userPlaces == null) {
+            return 0.0;
+        }
         if (userPlaces.length == 0) {
             return 0.0;
         }

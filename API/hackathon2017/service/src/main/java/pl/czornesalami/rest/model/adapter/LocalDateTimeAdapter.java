@@ -10,7 +10,11 @@ public class LocalDateTimeAdapter  extends XmlAdapter<String, LocalDateTime> {
         if (v == null) {
             return null;
         }
-        return LocalDateTime.parse(v);
+        try {
+            return LocalDateTime.parse(v);
+        } catch (Exception ex) {
+            return LocalDateTime.now();
+        }
     }
 
     @Override

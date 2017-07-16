@@ -1,5 +1,6 @@
 package pl.czornesalami.rest.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import pl.czornesalami.rest.model.adapter.LocalDateTimeAdapter;
 
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
@@ -8,7 +9,7 @@ import java.time.LocalDateTime;
 public class EventDto {
     private int id;
     private String title;
-    private String descripton;
+    private String description;
     @XmlJavaTypeAdapter(LocalDateTimeAdapter.class)
     private LocalDateTime dateTime;
     private int startPlace;
@@ -31,8 +32,8 @@ public class EventDto {
         return title;
     }
 
-    public String getDescripton() {
-        return descripton;
+    public String getDescription() {
+        return description;
     }
 
     public LocalDateTime getDateTime() {
@@ -109,7 +110,7 @@ public class EventDto {
         public Builder from(EventDto from) {
             this.id = from.id;
             this.title = from.title;
-            this.descripton = from.descripton;
+            this.descripton = from.description;
             this.dateTime = from.dateTime;
             this.startPlace = from.startPlace;
             this.endPlace = from.endPlace;
@@ -123,7 +124,7 @@ public class EventDto {
             eventDto.id = this.id;
             eventDto.dateTime = this.dateTime;
             eventDto.wayPoints = this.wayPoints;
-            eventDto.descripton = this.descripton;
+            eventDto.description = this.descripton;
             eventDto.startPlace = this.startPlace;
             eventDto.endPlace = this.endPlace;
             return eventDto;
