@@ -16,7 +16,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.imageViewDim = self.view.layer.frame.size.width * 0.6
         self.setupTableView()
     }
     
@@ -74,7 +74,25 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func setupProfileCalendarPlacesButtonsCell(tableView: UITableView, indexPath: IndexPath) -> ProfileCalendarPlacesButtonsTableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ProfileCalendarPlacesButtonsTableViewCell.reuseIdentifier(), for: indexPath) as! ProfileCalendarPlacesButtonsTableViewCell
+        cell.delegate = self
         return cell
     }
 
+}
+
+extension ProfileViewController: ProfileCalendarPlacesDelegate {
+    func calendarTapped() {
+        let storyboard = UIStoryboard.init(name: "Calendar", bundle: nil)
+        guard let viewController = storyboard.instantiateInitialViewController() else { return }
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    func localizationsTapped() {
+        print("Localizations tapped")
+//        self.performSegue(withIdentifier: "LocalizationsSegue", sender: nil)
+    }
+    
+    func saveTapped() {
+        print("Save tapped")
+    }
 }
