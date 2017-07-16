@@ -27,13 +27,22 @@ class LoginViewController: UIViewController {
     @IBAction func loginButtonTapped(_ sender: Any) {
         guard let login = loginTextField.text, let password = passwordTextField.text else { return }
         ApiClient.shared.login(username: login, password: password, successCallback: {
-            self.performSegue(withIdentifier: "LoginSegue", sender: nil)
+            ApiClient.shared.getUser(successCallback: { (user) in
+                DataManager.shared.user = user
+                self.performSegue(withIdentifier: "LoginSegue", sender: nil)
+            }, errorCallback: {
+                self.performSegue(withIdentifier: "LoginSegue", sender: nil)
+            })
         }, errorCallback: {
-            let alert = UIAlertController(title: "Oops!", message: "Something went wrong", preferredStyle: .alert)
-            let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
-            alert.addAction(action)
-            self.present(alert, animated: true, completion: nil)
+            self.handleError()
         })
+    }
+    
+    func handleError() {
+        let alert = UIAlertController(title: "Oops!", message: "Something went wrong", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
