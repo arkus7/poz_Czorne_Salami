@@ -25,7 +25,8 @@ class LocalizationsViewController: UIViewController, UITableViewDataSource, UITa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let alertController = UIAlertController(title: "Tytuł lokalizacji", message: "Opis lokalizacji", preferredStyle: .alert)
+        guard let place = DataManager.shared.places?[indexPath.section] else { return }
+        let alertController = UIAlertController(title: place.name, message: place.placeDescription?.replacingOccurrences(of: "...", with: ""), preferredStyle: .alert)
         let action = UIAlertAction(title: "Zamknij", style: .default, handler: nil)
         alertController.addAction(action)
         self.present(alertController, animated: true, completion: nil)
