@@ -12,7 +12,7 @@
 		250AF17D1F1A8430006039FD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250AF17B1F1A8430006039FD /* Login.storyboard */; };
 		250AF17F1F1A8430006039FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 250AF17E1F1A8430006039FD /* Assets.xcassets */; };
 		250AF1821F1A8430006039FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250AF1801F1A8430006039FD /* LaunchScreen.storyboard */; };
-		253236E21F1A9D3600C98DA2 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253236E11F1A9D3600C98DA2 /* RoundedImage.swift */; };
+		253236E21F1A9D3600C98DA2 /* CircularImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253236E11F1A9D3600C98DA2 /* CircularImage.swift */; };
 		253236E61F1AA42500C98DA2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253236E41F1AA42500C98DA2 /* ProfileViewController.swift */; };
 		253236E91F1AA43C00C98DA2 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253236E81F1AA43C00C98DA2 /* Profile.storyboard */; };
 		253236ED1F1AA89A00C98DA2 /* ProfileAvatarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253236EB1F1AA89A00C98DA2 /* ProfileAvatarTableViewCell.swift */; };
@@ -39,7 +39,7 @@
 		250AF17E1F1A8430006039FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		250AF1811F1A8430006039FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		250AF1831F1A8430006039FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		253236E11F1A9D3600C98DA2 /* RoundedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		253236E11F1A9D3600C98DA2 /* CircularImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImage.swift; sourceTree = "<group>"; };
 		253236E41F1AA42500C98DA2 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		253236E81F1AA43C00C98DA2 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		253236EB1F1AA89A00C98DA2 /* ProfileAvatarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileAvatarTableViewCell.swift; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 		253236DE1F1A9AC600C98DA2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				253236E11F1A9D3600C98DA2 /* RoundedImage.swift */,
+				253236E11F1A9D3600C98DA2 /* CircularImage.swift */,
 				257A01551F1AE078003A9FF1 /* BorderedButton.swift */,
 			);
 			name = Views;
@@ -277,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				250AF1821F1A8430006039FD /* LaunchScreen.storyboard in Resources */,
+				257A01521F1AD9A1003A9FF1 /* CalendarTableViewCell.xib in Resources */,
 				253236F61F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.xib in Resources */,
 				250AF17F1F1A8430006039FD /* Assets.xcassets in Resources */,
 				253236F21F1AB08D00C98DA2 /* ProfileNameLastnameTableViewCell.xib in Resources */,
@@ -343,7 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				253236FB1F1ACED800C98DA2 /* CalendarViewController.swift in Sources */,
-				253236E21F1A9D3600C98DA2 /* RoundedImage.swift in Sources */,
+				253236E21F1A9D3600C98DA2 /* CircularImage.swift in Sources */,
 				250AF17A1F1A8430006039FD /* LoginViewController.swift in Sources */,
 				253236F51F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.swift in Sources */,
 				253236F11F1AB08D00C98DA2 /* ProfileNameLastnameTableViewCell.swift in Sources */,

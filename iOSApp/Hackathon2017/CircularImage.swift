@@ -1,5 +1,5 @@
 //
-//  RoundedImage.swift
+//  CircularImage.swift
 //  Hackathon2017
 //
 //  Created by Jakub Janicki on 15.07.2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RoundedImage: UIImageView {
+class CircularImage: UIImageView {
     
     override func layoutSubviews() {
         self.layer.borderWidth = 1
