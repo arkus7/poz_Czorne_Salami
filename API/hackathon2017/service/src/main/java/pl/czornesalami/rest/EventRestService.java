@@ -25,10 +25,11 @@ public class EventRestService {
     @JWTTokenNeeded
     public Response addOrUpdateProfile(@HeaderParam("username") String username, EventDto data) {
 
-        eventDao.addEvent(username, data);
+        int id = eventDao.addEvent(username, data);
 
         return Response
                 .status(Response.Status.CREATED)
+                .entity(id)
                 .build();
     }
 

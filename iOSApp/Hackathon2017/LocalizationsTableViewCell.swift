@@ -9,9 +9,17 @@
 import UIKit
 
 class LocalizationsTableViewCell: UITableViewCell {
+    
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subtitleLabel: UILabel!
+    @IBOutlet weak var selectSwitch: UISwitch!
+    
+    
 
     func setupCell(place: Place) {
-        
+        titleLabel.text = place.name
+        subtitleLabel.text = place.placeDescription
     }
     
     override func awakeFromNib() {
