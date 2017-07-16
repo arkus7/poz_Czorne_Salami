@@ -93,7 +93,7 @@ class ApiClient {
             "title": event.title!,
             "description": event.description!,
             "dateTime": event.date!.toString(),
-            "startPlace": event.startPlace!.id!,
+            "startPlace": event.startPlace!,
             "endPlace": event.endPlace!.id!,
             "wayPoints": event.places!.map { $0.id! }
         ]

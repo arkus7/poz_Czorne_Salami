@@ -97,7 +97,7 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
             return events;
         }
         filteredEvents = events.filter{($0.joinedUsers?.contains((DataManager.shared.user?.username)!))!}
-        return filteredEvents;//add filter here
+        return filteredEvents;
     }
     
     
