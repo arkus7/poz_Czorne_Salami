@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -34,7 +36,7 @@
                                 <color key="tintColor" red="0.49803921569999998" green="0.72156862749999995" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NMj-xZ-trZ">
-                                <rect key="frame" x="16" y="56" width="343" height="547"/>
+                                <rect key="frame" x="16" y="72" width="343" height="531"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
@@ -45,11 +47,15 @@
                             <constraint firstItem="NMj-xZ-trZ" firstAttribute="leading" secondItem="puP-Ks-yNw" secondAttribute="leading" constant="16" id="cK8-hr-Sf8"/>
                             <constraint firstItem="PJ6-cp-Iy7" firstAttribute="top" secondItem="NMj-xZ-trZ" secondAttribute="bottom" id="fqv-2X-hAr"/>
                             <constraint firstAttribute="trailing" secondItem="NMj-xZ-trZ" secondAttribute="trailing" constant="16" id="kxS-CU-WWh"/>
-                            <constraint firstItem="NMj-xZ-trZ" firstAttribute="top" secondItem="w8G-7X-tyR" secondAttribute="bottom" id="lWt-Zn-EZE"/>
+                            <constraint firstItem="NMj-xZ-trZ" firstAttribute="top" secondItem="w8G-7X-tyR" secondAttribute="bottom" constant="16" id="lWt-Zn-EZE"/>
                             <constraint firstItem="w8G-7X-tyR" firstAttribute="leading" secondItem="puP-Ks-yNw" secondAttribute="leading" constant="16" id="otp-QY-2ce"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Wydarzenia" id="jV2-Nq-gvF"/>
+                    <navigationItem key="navigationItem" title="Wydarzenia" id="jV2-Nq-gvF">
+                        <barButtonItem key="rightBarButtonItem" image="add" id="fZo-od-edL">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="segmentedControl" destination="w8G-7X-tyR" id="tOY-Y5-egT"/>
                         <outlet property="tableView" destination="NMj-xZ-trZ" id="lxe-HQ-pr3"/>
@@ -58,6 +64,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMt-PJ-1DE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1111.2" y="142.57871064467767"/>
+        </scene>
+        <!--Events Details View Controller-->
+        <scene sceneID="WnA-qE-j4p">
+            <objects>
+                <viewController storyboardIdentifier="EventsDetailsViewController" automaticallyAdjustsScrollViewInsets="NO" id="TAb-dm-jvF" customClass="EventsDetailsViewController" customModule="Hackathon2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UE2-MH-S08"/>
+                        <viewControllerLayoutGuide type="bottom" id="JyV-0o-IzC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yrT-RG-qIm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ck-Jf-vaD">
+                                <rect key="frame" x="16" y="601" width="343" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Zapisz się"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="52M-K7-PI5">
+                                <rect key="frame" x="16" y="20" width="343" height="565"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="52M-K7-PI5" secondAttribute="trailing" id="1Bq-HU-dEs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Ck-Jf-vaD" secondAttribute="trailing" id="1gc-qQ-bxk"/>
+                            <constraint firstItem="4Ck-Jf-vaD" firstAttribute="height" secondItem="yrT-RG-qIm" secondAttribute="height" multiplier="0.075" id="ES1-kF-YZk"/>
+                            <constraint firstItem="JyV-0o-IzC" firstAttribute="top" secondItem="4Ck-Jf-vaD" secondAttribute="bottom" constant="16" id="Ttp-XQ-nEB"/>
+                            <constraint firstItem="4Ck-Jf-vaD" firstAttribute="leading" secondItem="yrT-RG-qIm" secondAttribute="leadingMargin" id="dmU-4L-Rs0"/>
+                            <constraint firstItem="52M-K7-PI5" firstAttribute="top" secondItem="UE2-MH-S08" secondAttribute="bottom" id="htd-0f-N1e"/>
+                            <constraint firstItem="4Ck-Jf-vaD" firstAttribute="top" secondItem="52M-K7-PI5" secondAttribute="bottom" constant="16" id="wJ6-iw-SZm"/>
+                            <constraint firstItem="52M-K7-PI5" firstAttribute="leading" secondItem="yrT-RG-qIm" secondAttribute="leadingMargin" id="zPY-zr-2IV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="saveButton" destination="4Ck-Jf-vaD" id="rOl-e2-BPC"/>
+                        <outlet property="tableView" destination="52M-K7-PI5" id="0m1-PO-TYW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wmF-1D-Zc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1862" y="143"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tgs-nX-uec">
@@ -83,4 +132,7 @@
             <point key="canvasLocation" x="172" y="142.57871064467767"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="add" width="16" height="16"/>
+    </resources>
 </document>

@@ -13,6 +13,8 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     
+//    var events: [Event] = [Event(), Event(), Event(), Event(), Event()]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,12 +30,23 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.tableView.register(UINib(nibName: EventsTableViewCell.reuseIdentifier(), bundle: nil), forCellReuseIdentifier: EventsTableViewCell.reuseIdentifier())
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Events", bundle: nil)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "EventsDetailsViewController") as! EventsDetailsViewController
+//        viewController.event = self.events[indexPath.section]
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 5
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 16
+        if section != 0 {
+            return 16
+        } else {
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
