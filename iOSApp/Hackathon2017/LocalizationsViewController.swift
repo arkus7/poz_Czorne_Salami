@@ -24,6 +24,13 @@ class LocalizationsViewController: UIViewController, UITableViewDataSource, UITa
         self.tableView.register(UINib(nibName: LocalizationsTableViewCell.reuseIdentifier(), bundle: nil), forCellReuseIdentifier: LocalizationsTableViewCell.reuseIdentifier())
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let alertController = UIAlertController(title: "Tytuł lokalizacji", message: "Opis lokalizacji", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Zamknij", style: .default, handler: nil)
+        alertController.addAction(action)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 105
     }
