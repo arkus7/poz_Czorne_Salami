@@ -5,6 +5,12 @@ PODS:
     - ObjectMapper (~> 2.0)
   - IQKeyboardManagerSwift (4.0.10)
   - ObjectMapper (2.2.7)
+PODS:
+  - GoogleMaps (2.2.0):
+    - GoogleMaps/Maps (= 2.2.0)
+  - GoogleMaps/Base (2.2.0)
+  - GoogleMaps/Maps (2.2.0):
+    - GoogleMaps/Base
 
 DEPENDENCIES:
   - AlamofireObjectMapper (~> 4.0)
@@ -19,3 +25,12 @@ SPEC CHECKSUMS:
 PODFILE CHECKSUM: 2b3bb1982714f5403cf52e9f9dc73f4c6f1af3b5
 
 COCOAPODS: 1.2.0
+DEPENDENCIES:
+  - GoogleMaps
+
+SPEC CHECKSUMS:
+  GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
+
+PODFILE CHECKSUM: fd235e61f0c1f7adab282489d26f0f8601c7ea7a
+
+COCOAPODS: 1.2.1
