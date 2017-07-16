@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Calendar View Controller-->
         <scene sceneID="WWh-la-AMX">
             <objects>
-                <viewController id="MfZ-V2-ikD" customClass="CalendarViewController" customModule="Hackathon2017" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="MfZ-V2-ikD" customClass="CalendarViewController" customModule="Hackathon2017" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hx7-N0-J8y"/>
                         <viewControllerLayoutGuide type="bottom" id="MY8-30-N1w"/>
@@ -21,19 +22,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calendar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvw-3p-X7s">
-                                <rect key="frame" x="153" y="323" width="69" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gTc-vr-eGC">
+                                <rect key="frame" x="16" y="28" width="343" height="639"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="yvw-3p-X7s" firstAttribute="centerY" secondItem="cp9-0K-kBy" secondAttribute="centerY" id="IIy-nQ-jGg"/>
-                            <constraint firstItem="yvw-3p-X7s" firstAttribute="centerX" secondItem="cp9-0K-kBy" secondAttribute="centerX" id="X1g-ze-kD8"/>
+                            <constraint firstItem="gTc-vr-eGC" firstAttribute="leading" secondItem="cp9-0K-kBy" secondAttribute="leadingMargin" id="AqN-XR-tlj"/>
+                            <constraint firstItem="MY8-30-N1w" firstAttribute="top" secondItem="gTc-vr-eGC" secondAttribute="bottom" id="DGS-fo-U4R"/>
+                            <constraint firstItem="gTc-vr-eGC" firstAttribute="top" secondItem="hx7-N0-J8y" secondAttribute="bottom" constant="8" id="ZNm-ez-FnV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gTc-vr-eGC" secondAttribute="trailing" id="dZ9-oI-RXN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="gTc-vr-eGC" id="0rL-v2-5LW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ORu-hs-Cd8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
