@@ -12,6 +12,7 @@
 		2175403C1F1ACE0F004AB713 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2175403B1F1ACE0F004AB713 /* Route.swift */; };
 		2175403E1F1ACEB2004AB713 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2175403D1F1ACEB2004AB713 /* Place.swift */; };
 		21BC16E71F1B0A490018275B /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC16E61F1B0A490018275B /* ApiClient.swift */; };
+		21BC16E91F1B10EB0018275B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC16E81F1B10EB0018275B /* User.swift */; };
 		250AF1781F1A8430006039FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250AF1771F1A8430006039FD /* AppDelegate.swift */; };
 		250AF17A1F1A8430006039FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250AF1791F1A8430006039FD /* LoginViewController.swift */; };
 		250AF17D1F1A8430006039FD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250AF17B1F1A8430006039FD /* Login.storyboard */; };
@@ -47,6 +48,7 @@
 		2175403B1F1ACE0F004AB713 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		2175403D1F1ACEB2004AB713 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		21BC16E61F1B0A490018275B /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		21BC16E81F1B10EB0018275B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		250AF1741F1A8430006039FD /* Hackathon2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackathon2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		250AF1771F1A8430006039FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		250AF1791F1A8430006039FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 				257A01621F1AF400003A9FF1 /* Event.swift */,
 				2175403B1F1ACE0F004AB713 /* Route.swift */,
 				2175403D1F1ACEB2004AB713 /* Place.swift */,
+				21BC16E81F1B10EB0018275B /* User.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				257A01631F1AF400003A9FF1 /* Event.swift in Sources */,
 				257A01511F1AD9A1003A9FF1 /* CalendarTableViewCell.swift in Sources */,
 				2175403E1F1ACEB2004AB713 /* Place.swift in Sources */,
+				21BC16E91F1B10EB0018275B /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
