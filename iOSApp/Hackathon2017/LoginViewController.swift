@@ -29,7 +29,7 @@ class LoginViewController: UIViewController {
         ApiClient.shared.login(username: login, password: password, successCallback: {
             ApiClient.shared.getUser(successCallback: { (user) in
                 DataManager.shared.user = user
-                self.performSegue(withIdentifier: "LoginSegue", sender: nil)
+                self.performSegue(withIdentifier: "EventsSegue", sender: nil)
             }, errorCallback: {
                 self.performSegue(withIdentifier: "LoginSegue", sender: nil)
             })

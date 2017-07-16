@@ -15,6 +15,9 @@ class SplashViewController: UIViewController {
 
         ApiClient.shared.getPlaces(successCallback: { (places) in
             DataManager.shared.places = places
+        }, errorCallback: nil)
+        ApiClient.shared.getUser(successCallback: { (user) in
+            DataManager.shared.user = user
             self.openNextScreen()
         }, errorCallback: {
             self.openNextScreen()
@@ -23,7 +26,7 @@ class SplashViewController: UIViewController {
     
     func openNextScreen() {
         var storyboardName: String
-        if UserDefaults.standard.string(forKey: "token") != nil {
+        if UserDefaults.standard.string(forKey: "token") != nil && DataManager.shared.user != nil {
             storyboardName = "Events"
         } else {
             storyboardName = "Login"

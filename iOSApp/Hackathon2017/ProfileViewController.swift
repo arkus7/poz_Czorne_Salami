@@ -113,9 +113,18 @@ extension ProfileViewController: ProfileCalendarPlacesDelegate {
         ApiClient.shared.updateUser(user, successCallback: { 
             print("success")
             DataManager.shared.user = user
+            if let navigationController = self.navigationController, let _ = navigationController.parent {
+                navigationController.popViewController(animated: true)
+            } else {
+                let storyboard = UIStoryboard(name: "Events", bundle: nil)
+                self.present(storyboard.instantiateInitialViewController()!, animated: true, completion: nil)
+            }
         }, errorCallback: {
             print("error")
+            let alert = UIAlertController(title: "Oops!", message: "Something went wrong", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
         })
-        print("Save tapped")
     }
 }

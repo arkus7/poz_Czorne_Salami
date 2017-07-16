@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -84,6 +84,7 @@
                         <outlet property="loginTextField" destination="g4C-BX-ezQ" id="rFA-HE-afs"/>
                         <outlet property="passwordTextField" destination="wKe-rR-ldR" id="LO3-YV-hWc"/>
                         <segue destination="Mvi-7c-HxV" kind="show" identifier="LoginSegue" id="8s7-AD-3p5"/>
+                        <segue destination="RZ3-h0-zjB" kind="show" identifier="EventsSegue" id="IGj-hv-cUP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -96,6 +97,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXn-Fe-btz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="858" y="38"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="501-D8-YC0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Events" id="RZ3-h0-zjB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DFg-vI-CbJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="887" y="123"/>
         </scene>
     </scenes>
     <resources>
