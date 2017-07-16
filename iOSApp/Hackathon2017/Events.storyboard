@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Events View Controller-->
+        <!--Wydarzenia-->
         <scene sceneID="upb-NO-IXR">
             <objects>
                 <viewController storyboardIdentifier="EventsViewController" id="IYv-f2-k9n" customClass="EventsViewController" customModule="Hackathon2017" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,11 +18,11 @@
                         <viewControllerLayoutGuide type="bottom" id="PJ6-cp-Iy7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="puP-Ks-yNw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="jV2-Nq-gvF"/>
+                    <navigationItem key="navigationItem" title="Wydarzenia" id="jV2-Nq-gvF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMt-PJ-1DE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -33,9 +33,14 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y96-1c-RtZ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XPY-EE-uoC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="XPY-EE-uoC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.49803921568627452" green="0.72156862745098038" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.49803921569999998" green="0.72156862749999995" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
