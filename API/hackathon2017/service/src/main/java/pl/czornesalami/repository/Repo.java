@@ -67,8 +67,9 @@ public class Repo {
     }
 
     public List<EventWithProbabilityDto> getEventsWithProbability(String username) {
-        ProfileDto profileDto = profileRepo.get(username);
-        int countUserFavoritePlaces = profileDto.getPlaces().length;
+        final ProfileDto profileDto = profileRepo.getOrDefault(username, ProfileDto.builder()
+                .withPlaces(new int[0])
+                .build());
 
         return events.entrySet()
                 .stream()
@@ -79,7 +80,7 @@ public class Repo {
                 ))
                 .map(event -> EventWithProbabilityDto.builder()
                         .withAuthor(event.getKey())
-                        .withJoinedUsers(usersJoinedToEvent.get(event.getValue().getId()))
+                        .withJoinedUsers(usersJoinedToEvent.getOrDefault(event.getValue().getId(), Collections.emptySet()))
                         .withEvent(event.getValue())
                         .withProbability(countProbability(event.getValue(), profileDto.getPlaces()))
                         .build())
@@ -88,6 +89,9 @@ public class Repo {
     }
 
     private double countProbability(EventDto event, int[] userPlaces) {
+        if (userPlaces.length == 0) {
+            return 0.0;
+        }
         List<Integer> userPlacesStream = IntStream.of(userPlaces).boxed().collect(Collectors.toList());
 
         IntStream.Builder eventPlacesStreamBuilder = IntStream.builder()
