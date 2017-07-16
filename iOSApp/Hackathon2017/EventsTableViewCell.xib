@@ -88,6 +88,7 @@
                 <outlet property="descriptionLabel" destination="hjP-8A-kgo" id="tLm-Om-xsb"/>
                 <outlet property="placeIcon" destination="d6k-UV-R8f" id="WGa-9a-qo0"/>
                 <outlet property="titleLabel" destination="tJt-aq-Hce" id="dot-7b-vo4"/>
+                <outlet property="userCount" destination="3rK-Ce-Vxf" id="8Co-SG-xMr"/>
             </connections>
             <point key="canvasLocation" x="34" y="84.5"/>
         </tableViewCell>

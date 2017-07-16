@@ -16,11 +16,15 @@ class EventsTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var placeIcon: CircularImageNotBordered!
+    @IBOutlet weak var userCount: UILabel!
     
     
     func setupCell(event: Event) {
         self.titleLabel.text = event.details?.title
         self.descriptionLabel.text = event.details?.description
+        if let count = event.joinedUsers?.count {
+            self.userCount.text = "\(count)"
+        }
         self.dateLabel.text = event.details?.date?.toString()
         
         self.placeIcon.sd_setImage(with: URL(string: (getPlaseIconURL((event.details?.startPlace!)!))), placeholderImage: UIImage(named: "users_count"))
