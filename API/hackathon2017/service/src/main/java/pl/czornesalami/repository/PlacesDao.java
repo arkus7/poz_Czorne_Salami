@@ -1,5 +1,6 @@
 package pl.czornesalami.repository;
 
+import pl.czornesalami.rest.model.PlaceDto;
 import pl.czornesalami.rest.model.PlacesDto;
 import pl.czornesalami.rest.model.ProfileDto;
 
@@ -15,5 +16,9 @@ public class PlacesDao {
 
     public PlacesDto getPlaces() {
         return repo.getPlaces();
+    }
+
+    public Optional<PlaceDto> getPlace(int id) {
+        return repo.getPlace(id);
     }
 }

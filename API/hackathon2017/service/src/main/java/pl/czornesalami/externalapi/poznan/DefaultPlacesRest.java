@@ -1,10 +1,10 @@
-package pl.czornesalami.externalapi;
+package pl.czornesalami.externalapi.poznan;
 
 import org.jboss.resteasy.client.jaxrs.ResteasyClient;
 import org.jboss.resteasy.client.jaxrs.ResteasyClientBuilder;
 import org.jboss.resteasy.client.jaxrs.ResteasyWebTarget;
 import org.jsoup.Jsoup;
-import pl.czornesalami.externalapi.model.Places;
+import pl.czornesalami.externalapi.poznan.model.Places;
 import pl.czornesalami.rest.model.PlaceDto;
 
 import javax.annotation.PostConstruct;

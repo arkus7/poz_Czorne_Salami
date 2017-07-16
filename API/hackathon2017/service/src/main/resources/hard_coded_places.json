@@ -1,0 +1,112 @@
+{
+  "places": [{
+    "id": 41218,
+    "coordinates": [16.946699317032426, 52.412489807851436],
+    "name": "Akademia Lubrańskiego",
+    "category": "Zabytki",
+    "address": "ul. Lubrańskiego 1",
+    "city": "Poznań",
+    "imageUrl": "http://www.poznan.pl/mim/main/object.html?co=picture&id_obiektu=41218&id_klasy=2572&lang=pl",
+    "description": "Była pierwszą w Poznaniu uczelnią o charakterze szkoły wyższej, a jednocześnie pierwszą w Polsce nowoczesną uczelnią humanistyczną. Ufundował ją w 1518 r. biskup poznański Jan Lubrański, który również - wraz z królem Zygmuntem Starym - zapewnił fundusze..."
+  }, {
+    "id": 41219,
+    "coordinates": [16.930034186344784, 52.40777286224416],
+    "name": "Bazar",
+    "category": "Zabytki",
+    "address": "Al. Marcinkowskiego 10",
+    "city": "Poznań",
+    "imageUrl": "http://www.poznan.pl/mim/main/object.html?co=picture&id_obiektu=41219&id_klasy=2572&lang=pl",
+    "description": "Budynek Bazaru powstał w latach 1838-42 z inicjatywy Karola Marcinkowskiego, który przyczynił się do powstania spółki pod nazwą Bazar Poznański. Późnoklasycystyczna budowla zwrócona była frontem do powstałej w tym samym czasie ul. Nowej (obecnej ul. I. ..."
+  }, {
+    "id": 41220,
+    "coordinates": [16.928695278816406, 52.408475364927135],
+    "name": "Biblioteka Raczyńskich",
+    "category": "Zabytki",
+    "address": "pl. Wolności 19",
+    "city": "Poznań",
+    "imageUrl": "http://www.poznan.pl/mim/main/object.html?co=picture&id_obiektu=41220&id_klasy=2572&lang=pl",
+    "description": "Klasycystyczny gmach biblioteki wybudowano w l. 1822-29, wg planów przypisywanych francuskim architektom Charlesowi Percierowi i Pierre-François Leonardowi Fontainowi. Elewacja frontowa budynku wzorowana na wschodniej ścianie paryskiego Luwru odzna..."
+  }, {
+    "id": 41221,
+    "coordinates": [16.935474244012433, 52.40643820557222],
+    "name": "Dawne kolegium jezuickie",
+    "category": "Zabytki",
+    "address": "pl. Kolegiacki",
+    "city": "Poznań",
+    "imageUrl": "http://www.poznan.pl/mim/main/object.html?co=picture&id_obiektu=41221&id_klasy=2572&lang=pl",
+    "description": "Jezuici przybyli do Poznania w XVI wieku i wybudowali tutaj swój klasztor, kościół oraz szkołę (kolegium), której pierwszym rektorem był ksiądz Jakub Wujek - autor najstarszego polskiego przekładu Biblii. Otwarta w 1573 r. szkoła reprezentowała..."
+  }, {
+    "id": 41222,
+    "coordinates": [16.934109431450203, 52.40816290744098],
+    "name": "Domki budnicze",
+    "category": "Zabytki",
+    "address": "Stary Rynek",
+    "city": "Poznań",
+    "imageUrl": "http://www.poznan.pl/mim/main/object.html?co=picture&id_obiektu=41222&id_klasy=2572&lang=pl",
+    "description": "Znajdujące się po południowej stronie ratusza domki budnicze stanowią relikt dawnej zabudowy handlowej. W średniowieczu stały tu drewniane budy, w których sprzedawano śledzie, a także sól, świece i pochodnie oraz niektóre przedmioty codziennego użytku. ..."
+  }, {
+    "id": 41226,
+    "coordinates": [16.93300365589486, 52.408310923479604],
+    "name": "Odwach",
+    "category": "Zabytki",
+    "address": "Stary Rynek 3",
+    "city": "Poznań",
+    "imageUrl": "http://www.poznan.pl/mim/main/object.html?co=picture&id_obiektu=41226&id_klasy=2572&lang=pl",
+    "description": "Najstarsza wzmianka o pierwotnym, drewnianym odwachu - siedzibie straży miejskiej pochodzi z początku XVIII w. Obecny, klasycystyczny budynek powstał w latach 1783-87 według projektu J. Ch. Kamsetzera, z inicjatywy Kazimierza Raczyńskiego, starosty gene..."
+  }, {
+    "id": 41228,
+    "coordinates": [16.949605198209184, 52.41138698811134],
+    "name": "Pałac Arcybiskupi i budowle Ostrowa Tumskiego",
+    "category": "Zabytki",
+    "address": "Ostrów Tumski",
+    "city": "Poznań",
+    "imageUrl": "http://www.poznan.pl/mim/main/object.html?co=picture&id_obiektu=41228&id_klasy=2572&lang=pl",
+    "description": "Najstarsza wzmianka pisana dotycząca poznańskiej siedziby biskupów pochodzi z 1404 r., chociaż dwór biskupi istniał zapewne od początku funkcjonowania katedry. Pałac - wielokrotnie niszczony w czasie wojen lub powodzi - zmieniał w ciągu wieków swój kszt..."
+  }, {
+    "id": 41229,
+    "coordinates": [16.93245347536043, 52.40852101328965],
+    "name": "Pałac Działyńskich",
+    "category": "Zabytki",
+    "address": "Stary Rynek 78/79",
+    "city": "Poznań",
+    "imageUrl": "http://www.poznan.pl/mim/main/object.html?co=picture&id_obiektu=41229&id_klasy=2572&lang=pl",
+    "description": "Pałac wybudowany został dla marszałka wielkiego litewskiego Władysława Gurowskiego na miejscu dwóch średniowiecznych kamienic, w zachodniej pierzei rynku. Barokowo-klasycystyczne formy (to jedna z pierwszych klasycystycznych budowli w Wielkopolsce) nada..."
+  }, {
+    "id": 41232,
+    "coordinates": [16.93475995598561, 52.40743326278479],
+    "name": "Pałac Górków",
+    "category": "Zabytki",
+    "address": "ul. Wodna 27",
+    "city": "Poznań",
+    "imageUrl": "http://www.poznan.pl/mim/main/object.html?co=picture&id_obiektu=41232&id_klasy=2572&lang=pl",
+    "description": "Miejska rezydencja magnacka znanego wielkopolskiego rodu powstała w latach 1544-48, w wyniku przebudowy gotyckich kamienic mieszczańskich. Dla starosty generalnego Wielkopolski Andrzeja Górki herbu Łodzia powstał wówczas zespół pałacowy na planie prosto..."
+  }, {
+    "id": 41233,
+    "coordinates": [16.93414638364065, 52.40853538180391],
+    "name": "Ratusz",
+    "category": "Zabytki",
+    "address": "Stary Rynek 1",
+    "city": "Poznań",
+    "imageUrl": "http://www.poznan.pl/mim/main/object.html?co=picture&id_obiektu=41233&id_klasy=2572&lang=pl",
+    "description": "Ratusz poznański jest niewątpliwie najwspanialszą budowlą renesansową w Wielkopolsce i jedną z najpiękniejszych w Polsce. Najstarsza wzmianka o ratuszu pochodzi z 1310 r. Wybudowano go zapewne niewiele wcześniej, na przełomie XIII i XIV w. Świadczyć o t..."
+  }, {
+    "id": 41234,
+    "coordinates": [16.918615895280634, 52.4078105850391],
+    "name": "Zamek cesarski i (dawna) dzielnica zamkowa",
+    "category": "Zabytki",
+    "address": "ul. Święty Marcin 80/82",
+    "city": "Poznań",
+    "imageUrl": "http://www.poznan.pl/mim/main/object.html?co=picture&id_obiektu=41234&id_klasy=2572&lang=pl",
+    "description": "Poznańska rezydencja niemieckiego cesarza Wilhelma II zbudowana została wg projektu Franza Schwechtena w latach 1905-1910. Była to ostatnia siedziba cesarska, jaka powstała w Europie. Wzniesiono ją na wzór średniowiecznych zamków - jako symbol panowania..."
+  }, {
+    "id": 41235,
+    "coordinates": [16.931358578632693, 52.409283815347685],
+    "name": "Zamek królewski",
+    "category": "Zabytki",
+    "address": "Góra Przemysła 1",
+    "city": "Poznań",
+    "imageUrl": "http://www.poznan.pl/mim/main/object.html?co=picture&id_obiektu=41235&id_klasy=2572&lang=pl",
+    "description": "W drugiej połowie XIII wieku na szczycie wzgórza wznoszącego się kilkanaście metrów ponad poziom Starego Rynku, Przemysł I wybudował zamek książęcy. Jego syn Przemysł II - późniejszy król polski - rozbudował zamek, który w zamyśle twórcy miał stać się w..."
+  }
+  ]
+}

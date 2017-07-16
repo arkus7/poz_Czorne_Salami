@@ -1,4 +1,4 @@
-package pl.czornesalami.externalapi.model;
+package pl.czornesalami.externalapi.poznan.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
