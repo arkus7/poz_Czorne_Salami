@@ -13,6 +13,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var tableView: UITableView!
     
     var imageViewDim: CGFloat!
+    weak var namesDelegate : ProfileNameLastnameDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,6 +70,11 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func setupNameLastnameCell(tableView: UITableView, indexPath: IndexPath) -> ProfileNameLastnameTableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ProfileNameLastnameTableViewCell.reuseIdentifier(), for: indexPath) as! ProfileNameLastnameTableViewCell
+        
+        let user = DataManager.shared.user
+        cell.nameTextField.text = user?.name
+        cell.surnameTextField.text = user?.surname
+        self.namesDelegate = cell
         return cell
     }
     
@@ -93,6 +99,20 @@ extension ProfileViewController: ProfileCalendarPlacesDelegate {
     }
     
     func saveTapped() {
+        var user: User
+        if let savedUser = DataManager.shared.user {
+            user = savedUser
+        } else {
+            user = User()!
+        }
+        user.name = namesDelegate?.getName()
+        user.surname = namesDelegate?.getSurname()
+        ApiClient.shared.updateUser(user, successCallback: { 
+            print("success")
+            DataManager.shared.user = user
+        }, errorCallback: {
+            print("error")
+        })
         print("Save tapped")
     }
 }

@@ -8,10 +8,25 @@
 
 import UIKit
 
-class ProfileNameLastnameTableViewCell: UITableViewCell {
+protocol ProfileNameLastnameDelegate : NSObjectProtocol {
+    func getName() -> String
+    func getSurname() -> String
+}
 
+class ProfileNameLastnameTableViewCell: UITableViewCell, ProfileNameLastnameDelegate {
+
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var surnameTextField: UITextField!
+    
     class func reuseIdentifier() -> String {
         return "ProfileNameLastnameTableViewCell"
     }
     
+    func getName() -> String {
+        return nameTextField.text ?? ""
+    }
+    
+    func getSurname() -> String {
+        return surnameTextField.text ?? ""
+    }
 }
