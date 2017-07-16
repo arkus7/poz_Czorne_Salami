@@ -33,19 +33,19 @@
                                 </segments>
                                 <color key="tintColor" red="0.49803921569999998" green="0.72156862749999995" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NMj-xZ-trZ">
-                                <rect key="frame" x="16" y="72" width="343" height="531"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NMj-xZ-trZ">
+                                <rect key="frame" x="16" y="56" width="343" height="547"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="w8G-7X-tyR" firstAttribute="top" secondItem="aZ3-uv-DWo" secondAttribute="bottom" constant="16" id="79I-tA-l5v"/>
                             <constraint firstAttribute="trailing" secondItem="w8G-7X-tyR" secondAttribute="trailing" constant="16" id="7n6-PS-S2H"/>
                             <constraint firstItem="NMj-xZ-trZ" firstAttribute="leading" secondItem="puP-Ks-yNw" secondAttribute="leading" constant="16" id="cK8-hr-Sf8"/>
                             <constraint firstItem="PJ6-cp-Iy7" firstAttribute="top" secondItem="NMj-xZ-trZ" secondAttribute="bottom" id="fqv-2X-hAr"/>
                             <constraint firstAttribute="trailing" secondItem="NMj-xZ-trZ" secondAttribute="trailing" constant="16" id="kxS-CU-WWh"/>
-                            <constraint firstItem="NMj-xZ-trZ" firstAttribute="top" secondItem="w8G-7X-tyR" secondAttribute="bottom" constant="16" id="lWt-Zn-EZE"/>
+                            <constraint firstItem="NMj-xZ-trZ" firstAttribute="top" secondItem="w8G-7X-tyR" secondAttribute="bottom" id="lWt-Zn-EZE"/>
                             <constraint firstItem="w8G-7X-tyR" firstAttribute="leading" secondItem="puP-Ks-yNw" secondAttribute="leading" constant="16" id="otp-QY-2ce"/>
                         </constraints>
                     </view>
