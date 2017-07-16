@@ -14,6 +14,7 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var tableView: UITableView!
     
     var events: [Event] = []
+    var filteredEvents: [Event] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +22,10 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let font = UIFont.systemFont(ofSize: 18)
         self.segmentedControl.setTitleTextAttributes([NSFontAttributeName: font], for: .normal)
         
+        
         ApiClient.shared.getEvents(successCallback: { (events) in
             self.events = events
+            self.filteredEvents = events;
             self.tableView.reloadData()
         }, errorCallback: {
             
@@ -40,12 +43,12 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Events", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "EventsDetailsViewController") as! EventsDetailsViewController
-        viewController.event = self.events[indexPath.section]
+        viewController.event = self.filteredEvents[indexPath.section]
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return self.events.count
+        return self.filteredEvents.count
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -68,7 +71,7 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: EventsTableViewCell.reuseIdentifier(), for: indexPath) as! EventsTableViewCell
-        let event = self.events[indexPath.section]
+        let event = self.filteredEvents[indexPath.section]
         cell.setupCell(event: event)
         return cell
     }
@@ -82,5 +85,21 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let profileViewController = storyboard.instantiateViewController(withIdentifier: "ProfileViewController")
         self.navigationController?.pushViewController(profileViewController, animated: true)
     }
+    
+    @IBAction func onSegmentChangeAction(_ sender: UISegmentedControl) {
+        
+        filteredEvents = getEventsByType(sender.selectedSegmentIndex)
+        self.tableView.reloadData()
+    }
+    
+    func getEventsByType(_ type:Int) -> [Event] {
+        if(type == 0){
+            return events;
+        }
+        filteredEvents = events.filter{($0.joinedUsers?.contains((DataManager.shared.user?.username)!))!}
+        return filteredEvents;//add filter here
+    }
+    
+    
     
 }
