@@ -54,6 +54,9 @@
                     <navigationItem key="navigationItem" title="Wydarzenia" id="jV2-Nq-gvF">
                         <barButtonItem key="leftBarButtonItem" image="ProfileIcon" id="akl-il-FXJ">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="profileClick:" destination="IYv-f2-k9n" id="dAg-YU-VT9"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="add" id="fZo-od-edL">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

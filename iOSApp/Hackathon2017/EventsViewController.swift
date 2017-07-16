@@ -76,4 +76,10 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
+    
+    @IBAction func profileClick(_ sender: UIBarButtonItem) {
+        let storyboard = UIStoryboard.init(name: "Profile", bundle: nil)
+        self.present(storyboard.instantiateInitialViewController()!, animated: true, completion: nil)
+    }
+    
 }
