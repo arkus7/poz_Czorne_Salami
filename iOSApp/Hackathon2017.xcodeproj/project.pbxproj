@@ -27,6 +27,8 @@
 		257A01521F1AD9A1003A9FF1 /* CalendarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257A01501F1AD9A1003A9FF1 /* CalendarTableViewCell.xib */; };
 		257A01541F1ADE32003A9FF1 /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A01531F1ADE32003A9FF1 /* UIColorHex.swift */; };
 		257A01561F1AE078003A9FF1 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A01551F1AE078003A9FF1 /* BorderedButton.swift */; };
+		257A01591F1AF067003A9FF1 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257A01581F1AF067003A9FF1 /* Events.storyboard */; };
+		257A015B1F1AF09C003A9FF1 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A015A1F1AF09C003A9FF1 /* EventsViewController.swift */; };
 		339DB2F9FB136F60F81BFBA2 /* Pods_Hackathon2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD18AA911F76C2C9FE3C635 /* Pods_Hackathon2017.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 		257A01501F1AD9A1003A9FF1 /* CalendarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarTableViewCell.xib; sourceTree = "<group>"; };
 		257A01531F1ADE32003A9FF1 /* UIColorHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
 		257A01551F1AE078003A9FF1 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		257A01581F1AF067003A9FF1 /* Events.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
+		257A015A1F1AF09C003A9FF1 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		9DD18AA911F76C2C9FE3C635 /* Pods_Hackathon2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackathon2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47F9F3A5B8E363A7EE2BCB7 /* Pods-Hackathon2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon2017/Pods-Hackathon2017.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +142,7 @@
 		253236DF1F1A9AD400C98DA2 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				257A01571F1AF050003A9FF1 /* Events */,
 				253236F71F1ACDD300C98DA2 /* Calendar */,
 				253236E31F1AA40F00C98DA2 /* Profile */,
 				253236E01F1A9B2E00C98DA2 /* Login */,
@@ -194,6 +199,15 @@
 				257A01501F1AD9A1003A9FF1 /* CalendarTableViewCell.xib */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		257A01571F1AF050003A9FF1 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				257A01581F1AF067003A9FF1 /* Events.storyboard */,
+				257A015A1F1AF09C003A9FF1 /* EventsViewController.swift */,
+			);
+			name = Events;
 			sourceTree = "<group>";
 		};
 		621679687423A697073D788E /* Pods */ = {
@@ -285,6 +299,7 @@
 				253236EE1F1AA89A00C98DA2 /* ProfileAvatarTableViewCell.xib in Resources */,
 				253236E91F1AA43C00C98DA2 /* Profile.storyboard in Resources */,
 				250AF17D1F1A8430006039FD /* Login.storyboard in Resources */,
+				257A01591F1AF067003A9FF1 /* Events.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +363,7 @@
 				250AF17A1F1A8430006039FD /* LoginViewController.swift in Sources */,
 				253236F51F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.swift in Sources */,
 				253236F11F1AB08D00C98DA2 /* ProfileNameLastnameTableViewCell.swift in Sources */,
+				257A015B1F1AF09C003A9FF1 /* EventsViewController.swift in Sources */,
 				253236E61F1AA42500C98DA2 /* ProfileViewController.swift in Sources */,
 				250AF1781F1A8430006039FD /* AppDelegate.swift in Sources */,
 				257A01541F1ADE32003A9FF1 /* UIColorHex.swift in Sources */,
