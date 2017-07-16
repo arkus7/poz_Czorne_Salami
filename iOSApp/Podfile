@@ -12,4 +12,5 @@ target 'Hackathon2017' do
   pod 'GoogleMaps'
   pod 'AFDateHelper', '~> 4.2.1'
   pod 'RxSwift', '~> 3.5.0'
+  pod 'SDWebImage', '~>3.8'
 end
