@@ -22,8 +22,8 @@ class Place : Mappable {
     required init?(map: Map) {
     }
     
-    convenience init() {
-        self.init()
+    convenience init?() {
+        self.init(map: Map(mappingType: .fromJSON, JSON: [:]))
     }
     
     func mapping(map: Map) {

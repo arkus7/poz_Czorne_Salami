@@ -21,15 +21,15 @@ class MapViewController: UIViewController {
         
         self.route = Route()
         route.encodedPath = "www~Hgn{eBqFaKu@iA}FkHsBsCYq@a@uAoC`CwAlA]RX~AlAtGLbAMcAmAuGY_B\\SvAmA|BqBPOSaAsBuLiBoKkAyGgCsOqDuU{AwKi@{ByB{MmB{KkJeg@K}@|@]bBm@tEWp@CRDB_@NsBp@{G|C}[xCbBnGzDPL~ChBz@j@{@k@_DiBIGb@iCb@gCbBsKuEuE{EmE}AiBSQKC}@R{E|@yFnAaBV_ALuC@qAAoASmHoA{@QG[oAqIgAoI[mDUeFUqLCqA@{@\\gFRqCDoD\\}AF_@gCiAoBq@KKWWYKY@SF_AK}EgAuCi@}@[qBa@sAWk@Se@OaAe@o@_@aAu@kBkBK_@Ec@c@_A[QcA_@SIGKyAcBiAeBy@}As@aBs@cBIYk@y@qAsAeAcA{C{C{BwBwD_EcE}DWM_@IyAEc@BiCnJkA~De@lAo@|@i@f@o@\\o@P[Dq@@oDc@iAY_F{A}AOiGEgC?sNb@{ADsA?_AIcB_@yBo@mBe@@YgA[yAc@IAQBWIMGiBQOGOKK?m@Ng@LyC~@aGRuCJc@@ASCIaG?gE@YDgCXw@h@}ABoB@iCCwEQgDAuEH_DF[EcBD{CJq@WoCKO}FUU?eDCwFEgS}BMiK[wA?"
-        let place1 = Place()
+        let place1 = Place()!
         place1.coordinates = [52.3917953, 16.857482]
         place1.name = "Pixel"
         place1.address = "Grunwaldzka 182, 60-166 Poznań, Polska"
-        let place3 = Place()
+        let place3 = Place()!
         place3.coordinates = [52.3927853, 16.858943]
         place3.name = "asd"
         place3.address = "asdasd"
-        let place2 = Place()
+        let place2 = Place()!
         place2.coordinates = [52.4537902, 16.9275968]
         place2.name = "Dom"
         place2.address = "Umultowska 45, Poznań, Polska"

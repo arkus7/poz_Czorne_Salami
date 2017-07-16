@@ -47,6 +47,8 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CalendarTableViewCell.reuseIdentifier(), for: indexPath) as! CalendarTableViewCell
         cell.dayTitleLabel.text = self.days[indexPath.section]
+        cell.day = WeekDay(rawValue: indexPath.section)!
+        cell.loadData()
         return cell
     }
     

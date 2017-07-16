@@ -49,6 +49,10 @@ class Event : Mappable {
         
     }
     
+    convenience init?() {
+        self.init(map: Map(mappingType: .fromJSON, JSON: [:]))
+    }
+    
     func mapping(map: Map) {
         self.author <- map["author"]
         self.joinedUsers <- map["joinedUsers"]
