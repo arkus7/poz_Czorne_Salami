@@ -1,6 +1,7 @@
 package pl.czornesalami.rest.app;
 
 import pl.czornesalami.rest.LoginRestService;
+import pl.czornesalami.rest.PlacesRestService;
 import pl.czornesalami.rest.ProfileRestService;
 import pl.czornesalami.rest.filter.JWTTokenNeededFilter;
 
@@ -26,6 +27,7 @@ public class MainWebApplication extends Application {
         Set<Class<?>> resources = new HashSet<>();
         resources.add(LoginRestService.class);
         resources.add(ProfileRestService.class);
+        resources.add(PlacesRestService.class);
         resources.add(JWTTokenNeededFilter.class);
         return resources;
     }

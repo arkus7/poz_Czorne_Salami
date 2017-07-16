@@ -25,7 +25,7 @@ public class ProfileRestService {
 
     @POST
     @Path("/profile")
-    @Consumes({MediaType.APPLICATION_JSON})
+    @Consumes({MediaType.APPLICATION_JSON + ";charset=utf-8"})
     @JWTTokenNeeded
     public Response addOrUpdateProfile(
             @HeaderParam("username") String username,
@@ -40,7 +40,7 @@ public class ProfileRestService {
 
     @GET
     @Path("/profile")
-    @Produces({MediaType.APPLICATION_JSON})
+    @Produces({MediaType.APPLICATION_JSON + ";charset=utf-8"})
     @JWTTokenNeeded
     public Response getProfile(@HeaderParam("username") String username) {
 
