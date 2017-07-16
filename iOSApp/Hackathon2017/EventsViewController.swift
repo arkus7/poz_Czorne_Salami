@@ -13,7 +13,7 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     
-//    var events: [Event] = [Event(), Event(), Event(), Event(), Event()]
+    var events: [Event] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +21,12 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let font = UIFont.systemFont(ofSize: 18)
         self.segmentedControl.setTitleTextAttributes([NSFontAttributeName: font], for: .normal)
         
+        ApiClient.shared.getEvents(successCallback: { (events) in
+            self.events = events
+            self.tableView.reloadData()
+        }, errorCallback: {
+            
+        })
         self.setupTableView()
         self.navigationController?.navigationBar.tintColor = .white
     }
@@ -34,12 +40,12 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Events", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "EventsDetailsViewController") as! EventsDetailsViewController
-//        viewController.event = self.events[indexPath.section]
+        viewController.event = self.events[indexPath.section]
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 5
+        return self.events.count
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -62,7 +68,8 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: EventsTableViewCell.reuseIdentifier(), for: indexPath) as! EventsTableViewCell
-//        cell.setupCell(event: Event())
+        let event = self.events[indexPath.row]
+        cell.setupCell(event: event)
         return cell
     }
     
