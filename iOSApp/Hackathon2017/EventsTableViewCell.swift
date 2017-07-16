@@ -17,9 +17,9 @@ class EventsTableViewCell: UITableViewCell {
     
     
     func setupCell(event: Event) {
-        self.titleLabel.text = event.title
-        self.descriptionLabel.text = event.description
-        self.dateLabel.text = event.date?.toString()
+        self.titleLabel.text = event.details?.title
+        self.descriptionLabel.text = event.details?.description
+        self.dateLabel.text = event.details?.date?.toString()
     }
     
     override func awakeFromNib() {

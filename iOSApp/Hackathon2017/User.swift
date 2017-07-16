@@ -22,6 +22,10 @@ class TimeTable: Mappable {
     
     }
     
+    convenience init?() {
+        self.init(map: Map(mappingType: .fromJSON, JSON: [:]))
+    }
+    
     func mapping(map: Map) {
         monday <- map["0"]
         tuesday <- map["1"]
@@ -41,6 +45,10 @@ class User : Mappable {
     
     required init?(map: Map) {
         
+    }
+    
+    convenience init?() {
+        self.init(map: Map(mappingType: .fromJSON, JSON: [:]))
     }
     
     func mapping(map: Map) {
