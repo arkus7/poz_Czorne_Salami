@@ -38,6 +38,10 @@ public class Repo {
         this.places.putAll(places);
     }
 
+    public Optional<PlaceDto> getPlace(int placeId) {
+        return Optional.ofNullable(places.get(placeId));
+    }
+
     public PlacesDto getPlaces() {
         return PlacesDto.builder()
                 .withPlaces(
@@ -64,6 +68,13 @@ public class Repo {
                 .withId(++eventActualId)
                 .build());
         events.put(username, eventsForUser);
+    }
+
+    public Optional<EventDto> getEvent(final int eventId) {
+        return events.values().stream()
+                        .flatMap(Collection::stream)
+                        .filter(v -> v.getId() == eventId)
+                        .findFirst();
     }
 
     public List<EventWithProbabilityDto> getEventsWithProbability(String username) {

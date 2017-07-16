@@ -1,9 +1,7 @@
-package pl.czornesalami.externalapi.model;
+package pl.czornesalami.externalapi.poznan.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-
-import javax.xml.bind.annotation.XmlElement;
 
 
 @JsonIgnoreProperties(ignoreUnknown = true)

@@ -1,6 +1,6 @@
-package pl.czornesalami.externalapi;
+package pl.czornesalami.externalapi.poznan;
 
-import pl.czornesalami.externalapi.model.Places;
+import pl.czornesalami.externalapi.poznan.model.Places;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

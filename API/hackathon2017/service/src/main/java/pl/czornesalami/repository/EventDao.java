@@ -27,4 +27,8 @@ public class EventDao {
         return repo.getEventsWithProbability(username);
     }
 
+    public Optional<EventDto> getEvent(int id) {
+        return repo.getEvent(id);
+    }
+
 }
