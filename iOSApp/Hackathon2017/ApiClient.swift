@@ -63,7 +63,9 @@ class ApiClient {
     func updateUser(_ user: User, successCallback: (() -> Void)?, errorCallback: (() -> Void)?) {
         let url = "\(baseUrl)/profile"
         
-        Alamofire.request(url, method: .post, headers: headers(withToken: token)).responseString { response in
+        let params: Parameters = user.toJSON()
+        
+        Alamofire.request(url, method: .post, parameters: params, encoding: JSONEncoding.default, headers: headers(withToken: token)).responseString { response in
             if response.result.isFailure {
                 errorCallback?()
             } else {
