@@ -131,10 +131,11 @@ class ApiClient {
     
     private func headers(withToken token: String? = nil) -> HTTPHeaders {
         var headers: HTTPHeaders = [
-           "Content-type": "application/json"
+           "Content-type": "application/json",
+           "Accept": "application/json"
         ]
         if let token = token {
-            headers["Authentication"] = "Bearer \(token)"
+            headers["Authorization"] = "Bearer \(token)"
         }
         return headers
     }
