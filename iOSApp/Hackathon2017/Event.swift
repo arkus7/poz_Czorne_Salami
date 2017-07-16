@@ -33,6 +33,10 @@ class EventDetails: Mappable {
         self.endPlace <- map["endPlace"]
         self.places <- map["places"]
     }
+    
+    convenience init?() {
+        self.init(map: Map(mappingType: .fromJSON, JSON: [:]))
+    }
 }
 
 class Event : Mappable {
