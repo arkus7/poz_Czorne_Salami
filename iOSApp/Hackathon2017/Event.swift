@@ -16,9 +16,9 @@ class EventDetails: Mappable {
     var description: String?
     var date: Date?
     var image: UIImage?
-    var startPlace: Place?
-    var endPlace: Place?
-    var places: [Place]?
+    var startPlace: Int?
+    var endPlace: Int?
+    var places: [Int]?
     
     required init?(map: Map){
     }
@@ -31,7 +31,7 @@ class EventDetails: Mappable {
         self.image <- map["image"]
         self.startPlace <- map["startPlace"]
         self.endPlace <- map["endPlace"]
-        self.places <- map["places"]
+        self.places <- map["wayPoints"]
     }
     
     convenience init?() {

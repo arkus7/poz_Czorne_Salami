@@ -7,8 +7,16 @@
 //
 
 import Foundation
+import ObjectMapper
 
-class Route {
-    var encodedPath: String?
-    var waypoints: [Place]?
+class Route : Mappable {
+    var points: String?
+    
+    required init?(map: Map) {
+        
+    }
+    
+    func mapping(map: Map) {
+        self.points <- map["points"]
+    }
 }

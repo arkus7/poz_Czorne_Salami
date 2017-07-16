@@ -93,9 +93,9 @@ class ApiClient {
             "title": event.title!,
             "description": event.description!,
             "dateTime": event.date!.toString(),
-            "startPlace": event.startPlace!.id!,
-            "endPlace": event.endPlace!.id!,
-            "wayPoints": event.places!.map { $0.id! }
+            "startPlace": event.startPlace!,
+            "endPlace": event.endPlace!,
+            "wayPoints": event.places!
         ]
         
         Alamofire.request(url, method: .post, parameters: params, headers: headers(withToken: token)).responseJSON { response in
@@ -130,6 +130,17 @@ class ApiClient {
             }
         }
     }
+    
+    func getRouteForEvent(withId id: Int, successCallback: ((Route) -> Void)?, errorCallback: (() -> Void)?) {
+        let url = "\(baseUrl)/route/\(id)"
+        
+        Alamofire.request(url, headers: headers(withToken: token)).responseObject { (response: DataResponse<Route>) in
+            if let route = response.result.value {
+                successCallback?(route)
+            } else {
+                errorCallback?()
+            }
+        }    }
     
     private func headers(withToken token: String? = nil) -> HTTPHeaders {
         var headers: HTTPHeaders = [
