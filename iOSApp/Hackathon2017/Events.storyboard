@@ -54,6 +54,9 @@
                     <navigationItem key="navigationItem" title="Wydarzenia" id="jV2-Nq-gvF">
                         <barButtonItem key="rightBarButtonItem" image="add" id="fZo-od-edL">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="RLn-Z8-Cg9" kind="show" id="Qo2-VQ-qWr"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -64,6 +67,77 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMt-PJ-1DE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1111.2" y="142.57871064467767"/>
+        </scene>
+        <!--Create Event View Controller-->
+        <scene sceneID="dQ0-NC-VY9">
+            <objects>
+                <viewController id="RLn-Z8-Cg9" customClass="CreateEventViewController" customModule="Hackathon2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vqa-AB-OSX"/>
+                        <viewControllerLayoutGuide type="bottom" id="ubQ-TZ-dUH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NYt-zC-Ow4">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nazwa" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CnN-Qq-pr1">
+                                <rect key="frame" x="16" y="40" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7xu-Sz-yqh"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OvL-Sl-HAj">
+                                <rect key="frame" x="16" y="96" width="343" height="120.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="tfT-o3-QFx">
+                                <rect key="frame" x="16" y="232.5" width="343" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="521885600.703641">
+                                    <!--2017-07-16 08:13:20 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                    <!--1970-01-01 11:00:00 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="pl"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCR-Oq-71u" customClass="RoundedButton" customModule="Hackathon2017" customModuleProvider="target">
+                                <rect key="frame" x="16" y="464.5" width="343" height="34"/>
+                                <color key="backgroundColor" red="0.49803921569999998" green="0.72156862749999995" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Logowanie/Rejestracja">
+                                    <color key="titleColor" red="0.99991279840000002" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="OvL-Sl-HAj" secondAttribute="trailing" id="6Bo-RH-UYG"/>
+                            <constraint firstItem="tfT-o3-QFx" firstAttribute="leading" secondItem="NYt-zC-Ow4" secondAttribute="leadingMargin" id="GnH-Wy-GaN"/>
+                            <constraint firstItem="OvL-Sl-HAj" firstAttribute="height" secondItem="NYt-zC-Ow4" secondAttribute="height" multiplier="0.2" id="NP3-9k-Bso"/>
+                            <constraint firstItem="CnN-Qq-pr1" firstAttribute="top" secondItem="vqa-AB-OSX" secondAttribute="bottom" constant="40" id="Pkj-oO-cfD"/>
+                            <constraint firstItem="tfT-o3-QFx" firstAttribute="top" secondItem="OvL-Sl-HAj" secondAttribute="bottom" constant="16" id="SdO-04-a95"/>
+                            <constraint firstItem="oCR-Oq-71u" firstAttribute="leading" secondItem="NYt-zC-Ow4" secondAttribute="leadingMargin" id="VAD-1J-gzn"/>
+                            <constraint firstItem="CnN-Qq-pr1" firstAttribute="trailing" secondItem="NYt-zC-Ow4" secondAttribute="trailingMargin" id="hs2-FO-4kV"/>
+                            <constraint firstItem="oCR-Oq-71u" firstAttribute="trailing" secondItem="NYt-zC-Ow4" secondAttribute="trailingMargin" id="lBy-jh-ga7"/>
+                            <constraint firstItem="OvL-Sl-HAj" firstAttribute="top" secondItem="CnN-Qq-pr1" secondAttribute="bottom" constant="16" id="mk3-Ex-ABV"/>
+                            <constraint firstItem="oCR-Oq-71u" firstAttribute="top" secondItem="tfT-o3-QFx" secondAttribute="bottom" constant="16" id="pKw-7n-suN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tfT-o3-QFx" secondAttribute="trailing" id="vFL-Q8-oOQ"/>
+                            <constraint firstItem="CnN-Qq-pr1" firstAttribute="leading" secondItem="NYt-zC-Ow4" secondAttribute="leadingMargin" id="x3f-rC-Lzx"/>
+                            <constraint firstItem="OvL-Sl-HAj" firstAttribute="leading" secondItem="NYt-zC-Ow4" secondAttribute="leadingMargin" id="xV1-z4-Vxk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="OvL-Sl-HAj" id="hug-a3-B7b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kg9-Nu-bya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1727" y="-487"/>
         </scene>
         <!--Events Details View Controller-->
         <scene sceneID="WnA-qE-j4p">
@@ -109,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wmF-1D-Zc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1862" y="143"/>
+            <point key="canvasLocation" x="2324" y="143"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tgs-nX-uec">
