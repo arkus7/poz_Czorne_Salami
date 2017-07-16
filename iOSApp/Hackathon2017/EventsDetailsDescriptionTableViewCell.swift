@@ -10,8 +10,9 @@ import UIKit
 
 class EventsDetailsDescriptionTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var descriptionLabel: UILabel!
     func setupCell(event: Event) {
-        
+        self.descriptionLabel.text = event.details?.description
     }
     
     override func awakeFromNib() {

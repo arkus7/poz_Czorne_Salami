@@ -7,11 +7,28 @@
 //
 
 import UIKit
+import SDWebImage
 
 class EventsDetailsTopTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var photo: CircularImageNotBordered!
+    @IBOutlet weak var personsLabel: UILabel!
     func setupCell(event: Event) {
+        titleLabel.text = event.details?.title
         
+        personsLabel.text = "\(event.joinedUsers!.count) osób"
+        
+//        photo.sd_setImage(with: URL(string: getPlaseIconURL(event.details!.id!))!)
+    }
+    
+    func getPlaseIconURL(_ id:Int) -> String {
+        for place in DataManager.shared.places! {
+            if(id == place.id){
+                return place.imageUrl!;
+            }
+        }
+        return "";
     }
     
     override func awakeFromNib() {
