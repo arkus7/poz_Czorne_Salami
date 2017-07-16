@@ -15,9 +15,11 @@ class Event: Mappable {
     var description: String?
     var date: Date?
     var image: UIImage?
+    var startPlace: Place?
+    var endPlace: Place?
+    var places: [Place]?
     
     required init?(map: Map){
-        
     }
     
     func mapping(map: Map) {
@@ -25,5 +27,8 @@ class Event: Mappable {
         self.description <- map["description"]
         self.date <- map["date"]
         self.image <- map["image"]
+        self.startPlace <- map["startPlace"]
+        self.endPlace <- map["endPlace"]
+        self.places <- map["places"]
     }
 }

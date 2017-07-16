@@ -19,7 +19,6 @@ class Place : Mappable {
     var placeDescription: String?
     
     required init?(map: Map) {
-        
     }
     
     convenience init() {
