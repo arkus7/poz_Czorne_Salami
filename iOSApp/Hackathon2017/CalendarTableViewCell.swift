@@ -31,8 +31,6 @@ class CalendarTableViewCell: UITableViewCell {
         
         self.layer.cornerRadius = 4
         self.layer.masksToBounds = true
-        self.layer.borderWidth = 1.0
-        self.layer.borderColor = UIColor.black.cgColor
     }
     
     @IBAction func nineButtonTapped(_ sender: Any) {
