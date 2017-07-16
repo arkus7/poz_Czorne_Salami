@@ -14,6 +14,8 @@
 		21BC16E71F1B0A490018275B /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC16E61F1B0A490018275B /* ApiClient.swift */; };
 		21BC16E91F1B10EB0018275B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC16E81F1B10EB0018275B /* User.swift */; };
 		21F2A04E1F1B5154005DA8BA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F2A04D1F1B5154005DA8BA /* DataManager.swift */; };
+		21F4E1A01F1B5CF500A19F74 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F4E19E1F1B5CF500A19F74 /* Splash.storyboard */; };
+		21F4E1A21F1B5D0B00A19F74 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F4E1A11F1B5D0B00A19F74 /* SplashViewController.swift */; };
 		250874411F1B13AE00EFE774 /* EventsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250874401F1B13AE00EFE774 /* EventsDetailsViewController.swift */; };
 		250874441F1B19E900EFE774 /* EventsDetailsTopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250874421F1B19E900EFE774 /* EventsDetailsTopTableViewCell.swift */; };
 		250874451F1B19E900EFE774 /* EventsDetailsTopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 250874431F1B19E900EFE774 /* EventsDetailsTopTableViewCell.xib */; };
@@ -64,6 +66,8 @@
 		21BC16E61F1B0A490018275B /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		21BC16E81F1B10EB0018275B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		21F2A04D1F1B5154005DA8BA /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		21F4E19F1F1B5CF500A19F74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Splash.storyboard; sourceTree = "<group>"; };
+		21F4E1A11F1B5D0B00A19F74 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		250874401F1B13AE00EFE774 /* EventsDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsDetailsViewController.swift; sourceTree = "<group>"; };
 		250874421F1B19E900EFE774 /* EventsDetailsTopTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsDetailsTopTableViewCell.swift; sourceTree = "<group>"; };
 		250874431F1B19E900EFE774 /* EventsDetailsTopTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventsDetailsTopTableViewCell.xib; sourceTree = "<group>"; };
@@ -127,6 +131,15 @@
 				217540391F1ACC40004AB713 /* MapViewController.swift */,
 			);
 			name = Map;
+			sourceTree = "<group>";
+		};
+		21F4E19D1F1B5CD600A19F74 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				21F4E19E1F1B5CF500A19F74 /* Splash.storyboard */,
+				21F4E1A11F1B5D0B00A19F74 /* SplashViewController.swift */,
+			);
+			name = Splash;
 			sourceTree = "<group>";
 		};
 		2508744E1F1B31B500EFE774 /* Localizations */ = {
@@ -221,6 +234,7 @@
 		253236DF1F1A9AD400C98DA2 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				21F4E19D1F1B5CD600A19F74 /* Splash */,
 				2508744E1F1B31B500EFE774 /* Localizations */,
 				257A01571F1AF050003A9FF1 /* Events */,
 				253236F71F1ACDD300C98DA2 /* Calendar */,
@@ -404,6 +418,7 @@
 				250AF1821F1A8430006039FD /* LaunchScreen.storyboard in Resources */,
 				257A01521F1AD9A1003A9FF1 /* CalendarTableViewCell.xib in Resources */,
 				253236F61F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.xib in Resources */,
+				21F4E1A01F1B5CF500A19F74 /* Splash.storyboard in Resources */,
 				250AF17F1F1A8430006039FD /* Assets.xcassets in Resources */,
 				2508744D1F1B22BE00EFE774 /* EventsDetailsMapTableViewCell.xib in Resources */,
 				253236F21F1AB08D00C98DA2 /* ProfileNameLastnameTableViewCell.xib in Resources */,
@@ -474,6 +489,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21F4E1A21F1B5D0B00A19F74 /* SplashViewController.swift in Sources */,
 				250874481F1B1D2F00EFE774 /* EventsDetailsDescriptionTableViewCell.swift in Sources */,
 				2508744C1F1B22BE00EFE774 /* EventsDetailsMapTableViewCell.swift in Sources */,
 				253236FB1F1ACED800C98DA2 /* CalendarViewController.swift in Sources */,
@@ -514,6 +530,14 @@
 				217540361F1ACC1E004AB713 /* Base */,
 			);
 			name = Map.storyboard;
+			sourceTree = "<group>";
+		};
+		21F4E19E1F1B5CF500A19F74 /* Splash.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21F4E19F1F1B5CF500A19F74 /* Base */,
+			);
+			name = Splash.storyboard;
 			sourceTree = "<group>";
 		};
 		250AF17B1F1A8430006039FD /* Login.storyboard */ = {

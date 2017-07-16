@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dt2-dj-cpD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="tEj-NF-3E1">
+            <objects>
+                <viewController id="dt2-dj-cpD" customClass="SplashViewController" customModule="Hackathon2017" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eyh-m0-bvD"/>
+                        <viewControllerLayoutGuide type="bottom" id="dGA-RM-Yi3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hbD-bs-XZ2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoWithText" translatesAutoresizingMaskIntoConstraints="NO" id="5Ax-KD-drz">
+                                <rect key="frame" x="46.5" y="-0.5" width="281" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Ax-KD-drz" firstAttribute="centerX" secondItem="hbD-bs-XZ2" secondAttribute="centerX" id="0x0-9A-Slw"/>
+                            <constraint firstItem="5Ax-KD-drz" firstAttribute="width" secondItem="hbD-bs-XZ2" secondAttribute="width" multiplier="0.75" id="DJN-TQ-SYi"/>
+                            <constraint firstItem="5Ax-KD-drz" firstAttribute="centerY" secondItem="hbD-bs-XZ2" secondAttribute="centerY" id="cin-fR-4d2"/>
+                            <constraint firstItem="5Ax-KD-drz" firstAttribute="height" secondItem="hbD-bs-XZ2" secondAttribute="height" id="fzj-ca-HTP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IGx-Sx-GzZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="107"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LogoWithText" width="223" height="102"/>
+    </resources>
+</document>
