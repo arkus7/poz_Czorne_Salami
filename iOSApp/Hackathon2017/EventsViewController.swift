@@ -79,7 +79,8 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBAction func profileClick(_ sender: UIBarButtonItem) {
         let storyboard = UIStoryboard.init(name: "Profile", bundle: nil)
-        self.present(storyboard.instantiateInitialViewController()!, animated: true, completion: nil)
+        let profileViewController = storyboard.instantiateViewController(withIdentifier: "ProfileViewController")
+        self.navigationController?.pushViewController(profileViewController, animated: true)
     }
     
 }
