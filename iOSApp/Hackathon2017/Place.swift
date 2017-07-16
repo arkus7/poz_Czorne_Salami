@@ -22,6 +22,10 @@ class Place : Mappable {
         
     }
     
+    convenience init() {
+        self.init()
+    }
+    
     func mapping(map: Map) {
         self.name <- map["name"]
         self.coordinates <- map["coordinates"]
