@@ -8,17 +8,22 @@
 
 import Foundation
 import UIKit
+import ObjectMapper
 
-class Event {
-    var title: String
-    var description: String
-    var date: Date
-    var image: UIImage
+class Event: Mappable {
+    var title: String?
+    var description: String?
+    var date: Date?
+    var image: UIImage?
     
-    init(title: String, description: String, date: Date, image: UIImage) {
-        self.title = title
-        self.description = description
-        self.date = date
-        self.image = image
+    required init?(map: Map){
+        
+    }
+    
+    func mapping(map: Map) {
+        self.title <- map["title"]
+        self.description <- map["description"]
+        self.date <- map["date"]
+        self.image <- map["image"]
     }
 }
