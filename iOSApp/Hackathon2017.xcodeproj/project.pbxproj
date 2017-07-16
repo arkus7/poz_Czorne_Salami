@@ -22,6 +22,7 @@
 		250874521F1B31D100EFE774 /* Localizations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250874511F1B31D100EFE774 /* Localizations.storyboard */; };
 		250874561F1B359700EFE774 /* LocalizationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250874541F1B359700EFE774 /* LocalizationsTableViewCell.swift */; };
 		250874571F1B359700EFE774 /* LocalizationsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 250874551F1B359700EFE774 /* LocalizationsTableViewCell.xib */; };
+		250874591F1B4E9300EFE774 /* CircularImageNotBordered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250874581F1B4E9300EFE774 /* CircularImageNotBordered.swift */; };
 		250AF1781F1A8430006039FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250AF1771F1A8430006039FD /* AppDelegate.swift */; };
 		250AF17A1F1A8430006039FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250AF1791F1A8430006039FD /* LoginViewController.swift */; };
 		250AF17D1F1A8430006039FD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250AF17B1F1A8430006039FD /* Login.storyboard */; };
@@ -68,6 +69,7 @@
 		250874511F1B31D100EFE774 /* Localizations.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Localizations.storyboard; sourceTree = "<group>"; };
 		250874541F1B359700EFE774 /* LocalizationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationsTableViewCell.swift; sourceTree = "<group>"; };
 		250874551F1B359700EFE774 /* LocalizationsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalizationsTableViewCell.xib; sourceTree = "<group>"; };
+		250874581F1B4E9300EFE774 /* CircularImageNotBordered.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageNotBordered.swift; sourceTree = "<group>"; };
 		250AF1741F1A8430006039FD /* Hackathon2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackathon2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		250AF1771F1A8430006039FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		250AF1791F1A8430006039FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				253236E11F1A9D3600C98DA2 /* CircularImage.swift */,
 				257A01551F1AE078003A9FF1 /* BorderedButton.swift */,
 				67496DFB1F1B01C500D72455 /* RoundedButton.swift */,
+				250874581F1B4E9300EFE774 /* CircularImageNotBordered.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				2175403A1F1ACC40004AB713 /* MapViewController.swift in Sources */,
 				250874411F1B13AE00EFE774 /* EventsDetailsViewController.swift in Sources */,
 				250AF1781F1A8430006039FD /* AppDelegate.swift in Sources */,
+				250874591F1B4E9300EFE774 /* CircularImageNotBordered.swift in Sources */,
 				67496DFC1F1B01C500D72455 /* RoundedButton.swift in Sources */,
 				257A01541F1ADE32003A9FF1 /* UIColorHex.swift in Sources */,
 				250874441F1B19E900EFE774 /* EventsDetailsTopTableViewCell.swift in Sources */,
