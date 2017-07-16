@@ -25,11 +25,15 @@ class MapViewController: UIViewController {
         place1.coordinates = [52.3917953, 16.857482]
         place1.name = "Pixel"
         place1.address = "Grunwaldzka 182, 60-166 Poznań, Polska"
+        let place3 = Place()
+        place3.coordinates = [52.3927853, 16.858943]
+        place3.name = "asd"
+        place3.address = "asdasd"
         let place2 = Place()
         place2.coordinates = [52.4537902, 16.9275968]
         place2.name = "Dom"
         place2.address = "Umultowska 45, Poznań, Polska"
-        route.waypoints = [place1, place2]
+        route.waypoints = [place1, place3, place2]
         
         showPath(mapView)
         showWaypoints(mapView)
@@ -41,18 +45,26 @@ class MapViewController: UIViewController {
         guard let route = self.route, let encodedPath = route.encodedPath else { return }
         let path = GMSPath(fromEncodedPath: encodedPath)
         let polyline = GMSPolyline(path: path)
+        polyline.strokeWidth = 2
         polyline.map = mapView
     }
     
     func showWaypoints(_ mapView: GMSMapView) {
         guard let route = self.route, let waypoints = route.waypoints else { return }
-        waypoints.forEach {
-            let marker = GMSMarker(position: CLLocationCoordinate2D(latitude: $0.latitude!, longitude: $0.longitude!))
-            marker.title = $0.name
-            marker.snippet = $0.address
-            marker.map = mapView
+        addMarker(waypoints.first, toMap: mapView, markerColor: .green)
+        addMarker(waypoints.last, toMap: mapView, markerColor: .red)
+        waypoints.dropFirst().dropLast().forEach {
+            addMarker($0, toMap: mapView)
         }
-        
+    }
+    
+    func addMarker(_ place: Place?, toMap mapView: GMSMapView, markerColor: UIColor = .gray) {
+        guard let place = place else { return }
+        let marker = GMSMarker(position: CLLocationCoordinate2D(latitude: place.latitude!, longitude: place.longitude!))
+        marker.title = place.name
+        marker.snippet = place.address
+        marker.map = mapView
+        marker.icon = GMSMarker.markerImage(with: markerColor)
     }
     
 }
