@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Profile View Controller-->
+        <!--Profil-->
         <scene sceneID="DRL-2o-4PM">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="CqK-ux-wNQ" customClass="ProfileViewController" customModule="Hackathon2017" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,7 +35,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="IJe-HV-s2D" secondAttribute="trailing" id="wZ4-Di-xqp"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="gT8-w7-bZ3"/>
+                    <navigationItem key="navigationItem" title="Profil" id="gT8-w7-bZ3"/>
                     <connections>
                         <outlet property="tableView" destination="IJe-HV-s2D" id="5l1-5h-tQx"/>
                     </connections>
@@ -53,6 +53,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.49803921569999998" green="0.72156862749999995" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

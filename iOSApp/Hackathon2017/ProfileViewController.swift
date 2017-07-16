@@ -18,6 +18,8 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.viewDidLoad()
         self.imageViewDim = self.view.layer.frame.size.width * 0.6
         self.setupTableView()
+        
+        self.navigationController?.navigationBar.tintColor = .white
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

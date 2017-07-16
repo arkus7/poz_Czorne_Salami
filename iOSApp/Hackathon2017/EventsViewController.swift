@@ -22,6 +22,7 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.segmentedControl.setTitleTextAttributes([NSFontAttributeName: font], for: .normal)
         
         self.setupTableView()
+        self.navigationController?.navigationBar.tintColor = .white
     }
     
     func setupTableView() {

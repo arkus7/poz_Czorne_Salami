@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="207.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_pic" translatesAutoresizingMaskIntoConstraints="NO" id="UuS-yN-ids" customClass="CircularImage" customModule="Hackathon2017" customModuleProvider="target">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_pic" translatesAutoresizingMaskIntoConstraints="NO" id="UuS-yN-ids" customClass="CircularImageNotBordered" customModule="Hackathon2017" customModuleProvider="target">
                         <rect key="frame" x="60" y="4" width="200" height="200"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="200" id="aEa-X2-Qny"/>
