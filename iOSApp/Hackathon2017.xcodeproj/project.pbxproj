@@ -29,6 +29,9 @@
 		257A01561F1AE078003A9FF1 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A01551F1AE078003A9FF1 /* BorderedButton.swift */; };
 		257A01591F1AF067003A9FF1 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257A01581F1AF067003A9FF1 /* Events.storyboard */; };
 		257A015B1F1AF09C003A9FF1 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A015A1F1AF09C003A9FF1 /* EventsViewController.swift */; };
+		257A015F1F1AF3D1003A9FF1 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A015D1F1AF3D1003A9FF1 /* EventsTableViewCell.swift */; };
+		257A01601F1AF3D1003A9FF1 /* EventsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257A015E1F1AF3D1003A9FF1 /* EventsTableViewCell.xib */; };
+		257A01631F1AF400003A9FF1 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A01621F1AF400003A9FF1 /* Event.swift */; };
 		339DB2F9FB136F60F81BFBA2 /* Pods_Hackathon2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD18AA911F76C2C9FE3C635 /* Pods_Hackathon2017.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +61,9 @@
 		257A01551F1AE078003A9FF1 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		257A01581F1AF067003A9FF1 /* Events.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
 		257A015A1F1AF09C003A9FF1 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		257A015D1F1AF3D1003A9FF1 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
+		257A015E1F1AF3D1003A9FF1 /* EventsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventsTableViewCell.xib; sourceTree = "<group>"; };
+		257A01621F1AF400003A9FF1 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		9DD18AA911F76C2C9FE3C635 /* Pods_Hackathon2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackathon2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47F9F3A5B8E363A7EE2BCB7 /* Pods-Hackathon2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackathon2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hackathon2017/Pods-Hackathon2017.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +101,7 @@
 		250AF1761F1A8430006039FD /* Hackathon2017 */ = {
 			isa = PBXGroup;
 			children = (
+				257A01611F1AF3EE003A9FF1 /* Models */,
 				253236DF1F1A9AD400C98DA2 /* Source */,
 				253236DE1F1A9AC600C98DA2 /* Views */,
 				253236DD1F1A9ABC00C98DA2 /* Supporting Files */,
@@ -204,10 +211,28 @@
 		257A01571F1AF050003A9FF1 /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				257A015C1F1AF3BB003A9FF1 /* Views */,
 				257A01581F1AF067003A9FF1 /* Events.storyboard */,
 				257A015A1F1AF09C003A9FF1 /* EventsViewController.swift */,
 			);
 			name = Events;
+			sourceTree = "<group>";
+		};
+		257A015C1F1AF3BB003A9FF1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				257A015D1F1AF3D1003A9FF1 /* EventsTableViewCell.swift */,
+				257A015E1F1AF3D1003A9FF1 /* EventsTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		257A01611F1AF3EE003A9FF1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				257A01621F1AF400003A9FF1 /* Event.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		621679687423A697073D788E /* Pods */ = {
@@ -290,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				257A01601F1AF3D1003A9FF1 /* EventsTableViewCell.xib in Resources */,
 				250AF1821F1A8430006039FD /* LaunchScreen.storyboard in Resources */,
 				257A01521F1AD9A1003A9FF1 /* CalendarTableViewCell.xib in Resources */,
 				253236F61F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.xib in Resources */,
@@ -360,6 +386,7 @@
 			files = (
 				253236FB1F1ACED800C98DA2 /* CalendarViewController.swift in Sources */,
 				253236E21F1A9D3600C98DA2 /* CircularImage.swift in Sources */,
+				257A015F1F1AF3D1003A9FF1 /* EventsTableViewCell.swift in Sources */,
 				250AF17A1F1A8430006039FD /* LoginViewController.swift in Sources */,
 				253236F51F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.swift in Sources */,
 				253236F11F1AB08D00C98DA2 /* ProfileNameLastnameTableViewCell.swift in Sources */,
@@ -369,6 +396,7 @@
 				257A01541F1ADE32003A9FF1 /* UIColorHex.swift in Sources */,
 				257A01561F1AE078003A9FF1 /* BorderedButton.swift in Sources */,
 				253236ED1F1AA89A00C98DA2 /* ProfileAvatarTableViewCell.swift in Sources */,
+				257A01631F1AF400003A9FF1 /* Event.swift in Sources */,
 				257A01511F1AD9A1003A9FF1 /* CalendarTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,7 +12,7 @@
         <!--Wydarzenia-->
         <scene sceneID="upb-NO-IXR">
             <objects>
-                <viewController storyboardIdentifier="EventsViewController" id="IYv-f2-k9n" customClass="EventsViewController" customModule="Hackathon2017" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EventsViewController" automaticallyAdjustsScrollViewInsets="NO" id="IYv-f2-k9n" customClass="EventsViewController" customModule="Hackathon2017" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aZ3-uv-DWo"/>
                         <viewControllerLayoutGuide type="bottom" id="PJ6-cp-Iy7"/>
@@ -20,9 +20,40 @@
                     <view key="view" contentMode="scaleToFill" id="puP-Ks-yNw">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="w8G-7X-tyR">
+                                <rect key="frame" x="16" y="16" width="343" height="41"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UJC-I4-mxa"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Dostępne"/>
+                                    <segment title="Zapisane"/>
+                                </segments>
+                                <color key="tintColor" red="0.49803921569999998" green="0.72156862749999995" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NMj-xZ-trZ">
+                                <rect key="frame" x="16" y="72" width="343" height="531"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w8G-7X-tyR" firstAttribute="top" secondItem="aZ3-uv-DWo" secondAttribute="bottom" constant="16" id="79I-tA-l5v"/>
+                            <constraint firstAttribute="trailing" secondItem="w8G-7X-tyR" secondAttribute="trailing" constant="16" id="7n6-PS-S2H"/>
+                            <constraint firstItem="NMj-xZ-trZ" firstAttribute="leading" secondItem="puP-Ks-yNw" secondAttribute="leading" constant="16" id="cK8-hr-Sf8"/>
+                            <constraint firstItem="PJ6-cp-Iy7" firstAttribute="top" secondItem="NMj-xZ-trZ" secondAttribute="bottom" id="fqv-2X-hAr"/>
+                            <constraint firstAttribute="trailing" secondItem="NMj-xZ-trZ" secondAttribute="trailing" constant="16" id="kxS-CU-WWh"/>
+                            <constraint firstItem="NMj-xZ-trZ" firstAttribute="top" secondItem="w8G-7X-tyR" secondAttribute="bottom" constant="16" id="lWt-Zn-EZE"/>
+                            <constraint firstItem="w8G-7X-tyR" firstAttribute="leading" secondItem="puP-Ks-yNw" secondAttribute="leading" constant="16" id="otp-QY-2ce"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Wydarzenia" id="jV2-Nq-gvF"/>
+                    <connections>
+                        <outlet property="segmentedControl" destination="w8G-7X-tyR" id="tOY-Y5-egT"/>
+                        <outlet property="tableView" destination="NMj-xZ-trZ" id="lxe-HQ-pr3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMt-PJ-1DE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
