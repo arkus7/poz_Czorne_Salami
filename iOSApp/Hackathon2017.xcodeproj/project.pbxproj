@@ -28,6 +28,8 @@
 		250874561F1B359700EFE774 /* LocalizationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250874541F1B359700EFE774 /* LocalizationsTableViewCell.swift */; };
 		250874571F1B359700EFE774 /* LocalizationsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 250874551F1B359700EFE774 /* LocalizationsTableViewCell.xib */; };
 		250874591F1B4E9300EFE774 /* CircularImageNotBordered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250874581F1B4E9300EFE774 /* CircularImageNotBordered.swift */; };
+		250874601F1B566E00EFE774 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2508745F1F1B566E00EFE774 /* CreateEventViewController.swift */; };
+		250874621F1B592200EFE774 /* UITextViewPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250874611F1B592200EFE774 /* UITextViewPlaceholder.swift */; };
 		250AF1781F1A8430006039FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250AF1771F1A8430006039FD /* AppDelegate.swift */; };
 		250AF17A1F1A8430006039FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250AF1791F1A8430006039FD /* LoginViewController.swift */; };
 		250AF17D1F1A8430006039FD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 250AF17B1F1A8430006039FD /* Login.storyboard */; };
@@ -80,6 +82,8 @@
 		250874541F1B359700EFE774 /* LocalizationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationsTableViewCell.swift; sourceTree = "<group>"; };
 		250874551F1B359700EFE774 /* LocalizationsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalizationsTableViewCell.xib; sourceTree = "<group>"; };
 		250874581F1B4E9300EFE774 /* CircularImageNotBordered.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularImageNotBordered.swift; sourceTree = "<group>"; };
+		2508745F1F1B566E00EFE774 /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
+		250874611F1B592200EFE774 /* UITextViewPlaceholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewPlaceholder.swift; sourceTree = "<group>"; };
 		250AF1741F1A8430006039FD /* Hackathon2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackathon2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		250AF1771F1A8430006039FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		250AF1791F1A8430006039FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +201,7 @@
 			children = (
 				257A01531F1ADE32003A9FF1 /* UIColorHex.swift */,
 				21F2A04D1F1B5154005DA8BA /* DataManager.swift */,
+				250874611F1B592200EFE774 /* UITextViewPlaceholder.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 				257A01581F1AF067003A9FF1 /* Events.storyboard */,
 				257A015A1F1AF09C003A9FF1 /* EventsViewController.swift */,
 				250874401F1B13AE00EFE774 /* EventsDetailsViewController.swift */,
+				2508745F1F1B566E00EFE774 /* CreateEventViewController.swift */,
 			);
 			name = Events;
 			sourceTree = "<group>";
@@ -503,6 +509,7 @@
 				253236F11F1AB08D00C98DA2 /* ProfileNameLastnameTableViewCell.swift in Sources */,
 				257A015B1F1AF09C003A9FF1 /* EventsViewController.swift in Sources */,
 				253236E61F1AA42500C98DA2 /* ProfileViewController.swift in Sources */,
+				250874621F1B592200EFE774 /* UITextViewPlaceholder.swift in Sources */,
 				2175403C1F1ACE0F004AB713 /* Route.swift in Sources */,
 				2175403A1F1ACC40004AB713 /* MapViewController.swift in Sources */,
 				250874411F1B13AE00EFE774 /* EventsDetailsViewController.swift in Sources */,
@@ -511,6 +518,7 @@
 				250874591F1B4E9300EFE774 /* CircularImageNotBordered.swift in Sources */,
 				67496DFC1F1B01C500D72455 /* RoundedButton.swift in Sources */,
 				257A01541F1ADE32003A9FF1 /* UIColorHex.swift in Sources */,
+				250874601F1B566E00EFE774 /* CreateEventViewController.swift in Sources */,
 				250874441F1B19E900EFE774 /* EventsDetailsTopTableViewCell.swift in Sources */,
 				257A01561F1AE078003A9FF1 /* BorderedButton.swift in Sources */,
 				253236ED1F1AA89A00C98DA2 /* ProfileAvatarTableViewCell.swift in Sources */,
