@@ -25,7 +25,7 @@
                         <rect key="frame" x="16" y="10.5" width="83.5" height="83.5"/>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Lwf-jP-CcJ">
-                        <rect key="frame" x="115.5" y="3.5" width="188.5" height="58.5"/>
+                        <rect key="frame" x="115.5" y="23" width="188.5" height="58.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nigrum magna Salami" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEZ-Ay-0ux">
                                 <rect key="frame" x="0.0" y="0.0" width="162.5" height="19.5"/>
@@ -62,11 +62,11 @@
                 <constraints>
                     <constraint firstItem="5nH-BY-pf6" firstAttribute="leading" secondItem="4ei-kL-t9U" secondAttribute="leading" constant="16" id="9X8-0N-nK5"/>
                     <constraint firstItem="5nH-BY-pf6" firstAttribute="centerY" secondItem="4ei-kL-t9U" secondAttribute="centerY" id="EJt-pM-Mhh"/>
-                    <constraint firstItem="Lwf-jP-CcJ" firstAttribute="top" secondItem="4ei-kL-t9U" secondAttribute="top" constant="3.5" id="O9l-uv-ure"/>
                     <constraint firstItem="5nH-BY-pf6" firstAttribute="width" secondItem="4ei-kL-t9U" secondAttribute="height" multiplier="0.8" id="SFM-VF-G0o"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Lwf-jP-CcJ" secondAttribute="trailing" constant="8" id="Zai-lo-SqB"/>
                     <constraint firstItem="5nH-BY-pf6" firstAttribute="height" secondItem="4ei-kL-t9U" secondAttribute="height" multiplier="0.8" id="j22-R7-era"/>
                     <constraint firstItem="Lwf-jP-CcJ" firstAttribute="leading" secondItem="5nH-BY-pf6" secondAttribute="trailing" constant="16" id="qIL-mN-Hqv"/>
+                    <constraint firstItem="Lwf-jP-CcJ" firstAttribute="centerY" secondItem="5nH-BY-pf6" secondAttribute="centerY" id="qSa-xs-8GP"/>
                 </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="34" y="84.5"/>
