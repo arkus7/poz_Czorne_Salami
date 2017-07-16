@@ -49,8 +49,14 @@
                             </stackView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ICx-Ys-B6w">
                                 <rect key="frame" x="137.5" y="26.5" width="45" height="31"/>
+                                <connections>
+                                    <action selector="didChangeSwitchState:" destination="Kw0-Z3-Bke" eventType="valueChanged" id="2Tj-FQ-KOk"/>
+                                </connections>
                             </switch>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="U5i-fl-qoS" firstAttribute="leading" secondItem="TOV-2L-UTj" secondAttribute="leading" id="abt-fe-EPV"/>
+                        </constraints>
                     </stackView>
                 </subviews>
                 <constraints>

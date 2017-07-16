@@ -97,7 +97,7 @@ public class Repo {
                         .withEvent(event.getValue())
                         .withProbability(countProbability(event.getValue(), profileDto.getPlaces()))
                         .build())
-                .sorted((Comparator.comparingDouble(EventWithProbabilityDto::getProbability)))
+                .sorted((Comparator.comparingDouble(v -> -v.getProbability())))
                 .collect(Collectors.toList());
     }
 
