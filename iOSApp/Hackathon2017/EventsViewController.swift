@@ -68,7 +68,7 @@ class EventsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: EventsTableViewCell.reuseIdentifier(), for: indexPath) as! EventsTableViewCell
-        let event = self.events[indexPath.row]
+        let event = self.events[indexPath.section]
         cell.setupCell(event: event)
         return cell
     }

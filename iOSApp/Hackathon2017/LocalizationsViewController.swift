@@ -36,7 +36,7 @@ class LocalizationsViewController: UIViewController, UITableViewDataSource, UITa
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 5
+        return DataManager.shared.places?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -55,7 +55,9 @@ class LocalizationsViewController: UIViewController, UITableViewDataSource, UITa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: LocalizationsTableViewCell.reuseIdentifier(), for: indexPath) as! LocalizationsTableViewCell
-//        cell.setupCell(place: Place())
+        if let place = DataManager.shared.places?[indexPath.section] {
+            cell.setupCell(place: place)
+        }
         return cell
     }
     
