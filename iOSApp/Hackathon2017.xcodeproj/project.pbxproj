@@ -23,6 +23,8 @@
 		253236F61F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 253236F41F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.xib */; };
 		253236F91F1ACEBD00C98DA2 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253236F81F1ACEBD00C98DA2 /* Calendar.storyboard */; };
 		253236FB1F1ACED800C98DA2 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253236FA1F1ACED800C98DA2 /* CalendarViewController.swift */; };
+		257A01511F1AD9A1003A9FF1 /* CalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A014F1F1AD9A1003A9FF1 /* CalendarTableViewCell.swift */; };
+		257A01521F1AD9A1003A9FF1 /* CalendarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257A01501F1AD9A1003A9FF1 /* CalendarTableViewCell.xib */; };
 		257A01541F1ADE32003A9FF1 /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A01531F1ADE32003A9FF1 /* UIColorHex.swift */; };
 		257A01561F1AE078003A9FF1 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257A01551F1AE078003A9FF1 /* BorderedButton.swift */; };
 		339DB2F9FB136F60F81BFBA2 /* Pods_Hackathon2017.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD18AA911F76C2C9FE3C635 /* Pods_Hackathon2017.framework */; };
@@ -48,6 +50,8 @@
 		253236F41F1AC5AE00C98DA2 /* ProfileCalendarPlacesButtonsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileCalendarPlacesButtonsTableViewCell.xib; sourceTree = "<group>"; };
 		253236F81F1ACEBD00C98DA2 /* Calendar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		253236FA1F1ACED800C98DA2 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		257A014F1F1AD9A1003A9FF1 /* CalendarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCell.swift; sourceTree = "<group>"; };
+		257A01501F1AD9A1003A9FF1 /* CalendarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarTableViewCell.xib; sourceTree = "<group>"; };
 		257A01531F1ADE32003A9FF1 /* UIColorHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
 		257A01551F1AE078003A9FF1 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		9DD18AA911F76C2C9FE3C635 /* Pods_Hackathon2017.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hackathon2017.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,10 +180,20 @@
 		253236F71F1ACDD300C98DA2 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				257A014E1F1AD97A003A9FF1 /* Views */,
 				253236F81F1ACEBD00C98DA2 /* Calendar.storyboard */,
 				253236FA1F1ACED800C98DA2 /* CalendarViewController.swift */,
 			);
 			name = Calendar;
+			sourceTree = "<group>";
+		};
+		257A014E1F1AD97A003A9FF1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				257A014F1F1AD9A1003A9FF1 /* CalendarTableViewCell.swift */,
+				257A01501F1AD9A1003A9FF1 /* CalendarTableViewCell.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		621679687423A697073D788E /* Pods */ = {
@@ -338,6 +352,7 @@
 				257A01541F1ADE32003A9FF1 /* UIColorHex.swift in Sources */,
 				257A01561F1AE078003A9FF1 /* BorderedButton.swift in Sources */,
 				253236ED1F1AA89A00C98DA2 /* ProfileAvatarTableViewCell.swift in Sources */,
+				257A01511F1AD9A1003A9FF1 /* CalendarTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
