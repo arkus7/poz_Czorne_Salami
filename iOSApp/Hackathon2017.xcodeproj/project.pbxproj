@@ -93,8 +93,6 @@
 			children = (
 				217540351F1ACC1E004AB713 /* Map.storyboard */,
 				217540391F1ACC40004AB713 /* MapViewController.swift */,
-				2175403B1F1ACE0F004AB713 /* Route.swift */,
-				2175403D1F1ACEB2004AB713 /* Place.swift */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -251,6 +249,8 @@
 			isa = PBXGroup;
 			children = (
 				257A01621F1AF400003A9FF1 /* Event.swift */,
+				2175403B1F1ACE0F004AB713 /* Route.swift */,
+				2175403D1F1ACEB2004AB713 /* Place.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
