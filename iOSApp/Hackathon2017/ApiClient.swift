@@ -84,15 +84,16 @@ class ApiClient {
         }
     }
     
-    func addEvent(_ event: Event, successCallback: (() -> Void)?, errorCallback: (() -> Void)?) {
+    func addEvent(_ event: EventDetails, successCallback: (() -> Void)?, errorCallback: (() -> Void)?) {
         let url = "\(baseUrl)/event"
         
         let params: Parameters = [
-            "title": event.title,
-            "description": event.description,
-            "dateTime": event.date,
-            "startPlace": event.startPlace.id,
-            "wayPoints": event.places.map { $0.id }
+            "title": event.title!,
+            "description": event.description!,
+            "dateTime": event.date!.toString(),
+            "startPlace": event.startPlace!.id!,
+            "endPlace": event.endPlace!.id!,
+            "wayPoints": event.places!.map { $0.id! }
         ]
         
         Alamofire.request(url, method: .post, parameters: params, headers: headers(withToken: token)).responseJSON { response in
