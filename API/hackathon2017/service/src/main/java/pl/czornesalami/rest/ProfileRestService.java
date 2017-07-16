@@ -9,6 +9,7 @@ import pl.czornesalami.rest.model.LoginRequestDto;
 import pl.czornesalami.rest.model.ProfileDto;
 
 import javax.inject.Inject;
+import javax.validation.constraints.NotNull;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -29,9 +30,9 @@ public class ProfileRestService {
     @JWTTokenNeeded
     public Response addOrUpdateProfile(
             @HeaderParam("username") String username,
-            ProfileDto data) {
+            @NotNull ProfileDto data) {
 
-        profileDao.addOrUpdateProfile(username, data);
+        profileDao.addOrUpdateProfile(username, data.toBuilder().withUsername(username).build());
 
         return Response
                 .status(Response.Status.CREATED)
