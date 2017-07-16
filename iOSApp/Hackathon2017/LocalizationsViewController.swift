@@ -86,9 +86,9 @@ class LocalizationsViewController: UIViewController, UITableViewDataSource, UITa
         self.event?.endPlace = self.placesList.first
         self.event?.places = self.placesList
         ApiClient.shared.addEvent(self.event!, successCallback: { 
-            print("Success")
+            self.dismiss(animated: true, completion: nil)
         }) { 
-            print("Failed")
+            self.dismiss(animated: true, completion: nil)
         }
     }
     

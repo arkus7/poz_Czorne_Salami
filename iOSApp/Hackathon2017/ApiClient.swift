@@ -92,7 +92,7 @@ class ApiClient {
         let params: Parameters = [
             "title": event.title!,
             "description": event.description!,
-            "dateTime": event.date!.toString(),
+//            "dateTime": event.date!,
             "startPlace": event.startPlace!,
             "endPlace": event.endPlace!,
             "wayPoints": event.places!

@@ -73,6 +73,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="SubtitleLabel" destination="oSN-Ub-Tg3" id="G31-XW-tXQ"/>
+                <outlet property="avatarImage" destination="0oV-Fw-gk7" id="Gse-lb-AwC"/>
                 <outlet property="selectSwitch" destination="ICx-Ys-B6w" id="nLt-Og-5g5"/>
                 <outlet property="subtitleLabel" destination="oSN-Ub-Tg3" id="t93-t6-4K5"/>
                 <outlet property="titleLabel" destination="fPc-wK-rkA" id="hNS-Ke-sCa"/>
